@@ -35,7 +35,7 @@
     }
   },
   "_metadata": {
-    "lastUpdated": "2025-03-25",
+    "lastUpdated": "2026-03-25",
     "source": "https://docs.sei.io/evm/usdc",
     "note": "Always verify addresses on-chain before use. Use isContract() to confirm."
   }

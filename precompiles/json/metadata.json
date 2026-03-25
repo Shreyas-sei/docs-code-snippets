@@ -1,11 +1,19 @@
 {
   "title": "JSON Precompile",
   "description": "Parse JSON data on-chain using the Sei JSON precompile to decode oracle responses and CosmWasm query results",
-  "tags": ["precompile", "json", "parsing", "oracle", "cosmwasm", "sei", "solidity"],
+  "tags": [
+    "precompile",
+    "json",
+    "parsing",
+    "oracle",
+    "cosmwasm",
+    "sei",
+    "solidity"
+  ],
   "difficulty": "intermediate",
   "tooling": ["hardhat", "ethers"],
   "chain": "sei-mainnet",
   "docs_urls": ["https://docs.sei.io/evm/precompiles/json"],
   "dependencies": ["@sei-js/evm"],
-  "last_verified": "2025-03-25"
+  "last_verified": "2026-03-25"
 }

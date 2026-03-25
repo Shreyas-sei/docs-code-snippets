@@ -9,8 +9,6 @@
     "https://docs.sei.io/evm/oracles/api3",
     "https://docs.api3.org/reference/dapis/understand/"
   ],
-  "dependencies": [
-    "@api3/contracts"
-  ],
-  "last_verified": "2025-03-25"
+  "dependencies": ["@api3/contracts"],
+  "last_verified": "2026-03-25"
 }

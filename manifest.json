@@ -28,7 +28,7 @@
       "docs_urls": ["https://docs.sei.io/evm/evm-general"],
       "dependencies": [],
       "files": ["Coin.sol", "Auction.vy"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "smart-contracts/erc20-token",
@@ -67,7 +67,7 @@
         "foundry/test/MyToken.t.sol",
         "foundry/foundry.toml"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "smart-contracts/erc721-nft",
@@ -103,7 +103,7 @@
         "foundry/script/Deploy.s.sol",
         "foundry/foundry.toml"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "smart-contracts/upgradeable-uups",
@@ -136,7 +136,7 @@
         "scripts/upgrade.js",
         "hardhat.config.js"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "smart-contracts/counter",
@@ -155,7 +155,7 @@
         "script/Deploy.s.sol",
         "foundry.toml"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "smart-contracts/verification",
@@ -169,7 +169,7 @@
       "docs_urls": ["https://docs.sei.io/evm/evm-verify-contracts"],
       "dependencies": [],
       "files": ["hardhat-verify.md", "foundry-verify.md"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/example-usage",
@@ -194,7 +194,7 @@
         "staking-example.js",
         "governance-example.js"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/distribution",
@@ -219,7 +219,7 @@
         "YieldAggregator.sol",
         "ValidatorCommissionManager.sol"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/staking",
@@ -240,7 +240,7 @@
       "docs_urls": ["https://docs.sei.io/evm/precompiles/staking"],
       "dependencies": ["@sei-js/evm"],
       "files": ["interfaces/IStaking.sol", "StakingManager.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/governance",
@@ -261,7 +261,7 @@
       "docs_urls": ["https://docs.sei.io/evm/precompiles/governance"],
       "dependencies": ["@sei-js/evm"],
       "files": ["interfaces/IGovernance.sol", "GovernanceVoter.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/oracle",
@@ -283,7 +283,7 @@
       "docs_urls": ["https://docs.sei.io/evm/precompiles/oracle"],
       "dependencies": [],
       "files": ["interfaces/IOracle.sol", "OraclePriceFeed.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/json",
@@ -305,7 +305,7 @@
       "docs_urls": ["https://docs.sei.io/evm/precompiles/json"],
       "dependencies": ["@sei-js/evm"],
       "files": ["interfaces/IJson.sol", "JsonParser.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/p256",
@@ -328,7 +328,7 @@
       "docs_urls": ["https://docs.sei.io/evm/precompiles/p256-precompile"],
       "dependencies": [],
       "files": ["P256Verify.sol", "ECDSA.sol", "P256.sol", "P256Example.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "precompiles/cosmos",
@@ -365,7 +365,7 @@
         "IBCPrecompile.sol",
         "PointerPrecompile.sol"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "frontend/connect-wallet",
@@ -388,7 +388,7 @@
         "@tanstack/react-query"
       ],
       "files": ["src/App.tsx", "src/wagmi.ts", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "frontend/read-write-contract",
@@ -408,7 +408,7 @@
         "@tanstack/react-query"
       ],
       "files": ["src/ContractInteraction.tsx", "src/App.tsx", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "frontend/in-app-swaps",
@@ -431,7 +431,7 @@
         "@tanstack/react-query"
       ],
       "files": ["src/SwapComponent.tsx", "src/App.tsx", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "wallet-integrations/particle",
@@ -459,7 +459,7 @@
         "ethers"
       ],
       "files": ["src/App.tsx", "src/particleConfig.ts", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "wallet-integrations/pimlico",
@@ -483,7 +483,7 @@
       ],
       "dependencies": ["permissionless", "viem"],
       "files": ["src/pimlicoClient.ts", "src/App.tsx", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "wallet-integrations/thirdweb-4337",
@@ -512,7 +512,7 @@
         "contracts/Storage.sol",
         "package.json"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "wallet-integrations/thirdweb-7702",
@@ -536,7 +536,7 @@
       ],
       "dependencies": ["thirdweb"],
       "files": ["src/client.ts", "src/App.tsx", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "bridging/layerzero",
@@ -562,7 +562,7 @@
         "hardhat.config.js",
         "scripts/deploy.js"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "bridging/thirdweb",
@@ -579,7 +579,7 @@
       ],
       "dependencies": ["thirdweb"],
       "files": ["src/BridgeComponent.tsx", "src/App.tsx", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "oracles/chainlink",
@@ -596,7 +596,7 @@
       ],
       "dependencies": ["@chainlink/contracts"],
       "files": ["contracts/ChainlinkConsumer.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "oracles/pyth",
@@ -621,7 +621,7 @@
       ],
       "dependencies": ["@pythnetwork/pyth-sdk-solidity", "axios"],
       "files": ["contracts/PythPriceFeed.sol", "scripts/updateAndRead.js"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "oracles/redstone",
@@ -638,7 +638,7 @@
       ],
       "dependencies": ["@redstone-finance/evm-connector"],
       "files": ["contracts/RedstoneConsumer.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "oracles/api3",
@@ -663,7 +663,7 @@
       ],
       "dependencies": ["@api3/contracts"],
       "files": ["contracts/Api3Consumer.sol"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "vrf/pyth",
@@ -689,7 +689,7 @@
       ],
       "dependencies": ["@pythnetwork/entropy-sdk-solidity"],
       "files": ["contracts/SeiEntropyDemo.sol", "scripts/deploy.js"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "indexers/goldsky",
@@ -719,7 +719,7 @@
         "subgraph/schema.graphql",
         "subgraph/src/mapping.ts"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "indexers/the-graph",
@@ -748,7 +748,7 @@
         "subgraph/schema.graphql",
         "subgraph/src/mapping.ts"
       ],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "indexers/moralis",
@@ -774,7 +774,7 @@
       ],
       "dependencies": ["moralis", "@moralisweb3/common-evm-utils", "express"],
       "files": ["streams/createStream.js", "webhooks/handler.js"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "ai-tooling/mcp-server",
@@ -799,7 +799,7 @@
       ],
       "dependencies": ["@sei-js/mcp-server"],
       "files": ["config/mcp-config.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "ai-tooling/cambrian",
@@ -837,7 +837,7 @@
         "ethers"
       ],
       "files": ["src/agent.ts", "package.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "protocols/usdc",
@@ -863,7 +863,7 @@
       ],
       "dependencies": [],
       "files": ["contracts/USDCIntegration.sol", "config/addresses.json"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     },
     {
       "id": "protocols/x402",
@@ -898,7 +898,7 @@
         "axios"
       ],
       "files": ["server/payment-server.ts", "client/payment-client.ts"],
-      "last_verified": "2025-03-25"
+      "last_verified": "2026-03-25"
     }
   ],
   "stats": {

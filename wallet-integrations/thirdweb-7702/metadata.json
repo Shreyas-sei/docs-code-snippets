@@ -1,7 +1,14 @@
 {
   "title": "Thirdweb EIP-7702 Wallet on Sei",
   "description": "EIP-7702 wallet delegation on Sei using thirdweb SDK v5. The EOA gains smart contract capabilities temporarily — no new contract address, gasless transactions supported.",
-  "tags": ["wallet", "thirdweb", "eip-7702", "gasless", "sei", "account-abstraction"],
+  "tags": [
+    "wallet",
+    "thirdweb",
+    "eip-7702",
+    "gasless",
+    "sei",
+    "account-abstraction"
+  ],
   "difficulty": "intermediate",
   "tooling": ["react", "thirdweb", "vite", "typescript"],
   "chain": "sei-mainnet",
@@ -9,8 +16,6 @@
     "https://docs.sei.io/evm/wallet-integrations/thirdweb-7702",
     "https://portal.thirdweb.com/typescript/v5/inAppWallet"
   ],
-  "dependencies": [
-    "thirdweb"
-  ],
-  "last_verified": "2025-03-25"
+  "dependencies": ["thirdweb"],
+  "last_verified": "2026-03-25"
 }

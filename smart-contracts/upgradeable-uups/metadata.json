@@ -1,18 +1,24 @@
 {
   "title": "UUPS Upgradeable ERC20 Token on Sei EVM",
   "description": "Demonstrates the UUPS (Universal Upgradeable Proxy Standard) pattern with a two-version ERC20 token. V1 is a standard token; V2 adds supply cap and transfer limits. Shows deploy and upgrade workflows for Sei EVM.",
-  "tags": ["uups", "upgradeable", "proxy", "erc20", "hardhat", "openzeppelin", "sei"],
+  "tags": [
+    "uups",
+    "upgradeable",
+    "proxy",
+    "erc20",
+    "hardhat",
+    "openzeppelin",
+    "sei"
+  ],
   "difficulty": "advanced",
   "tooling": ["hardhat", "ethers", "@openzeppelin/hardhat-upgrades"],
   "chain": "sei-mainnet",
-  "docs_urls": [
-    "https://docs.sei.io/evm/evm-hardhat"
-  ],
+  "docs_urls": ["https://docs.sei.io/evm/evm-hardhat"],
   "dependencies": [
     "@openzeppelin/contracts-upgradeable",
     "@openzeppelin/hardhat-upgrades",
     "@nomicfoundation/hardhat-toolbox",
     "dotenv"
   ],
-  "last_verified": "2025-03-25"
+  "last_verified": "2026-03-25"
 }

@@ -1,7 +1,14 @@
 {
   "title": "Particle Auth + Smart Account on Sei",
   "description": "Social login (Google/Twitter/email) and ERC-4337 Smart Account creation on Sei using Particle Network's Auth Core and Account Abstraction SDK.",
-  "tags": ["wallet", "particle", "account-abstraction", "erc-4337", "social-login", "sei"],
+  "tags": [
+    "wallet",
+    "particle",
+    "account-abstraction",
+    "erc-4337",
+    "social-login",
+    "sei"
+  ],
   "difficulty": "intermediate",
   "tooling": ["react", "particle-network", "ethers", "vite", "typescript"],
   "chain": "sei-mainnet",
@@ -14,5 +21,5 @@
     "@particle-network/aa",
     "ethers"
   ],
-  "last_verified": "2025-03-25"
+  "last_verified": "2026-03-25"
 }

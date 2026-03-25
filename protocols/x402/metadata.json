@@ -1,20 +1,20 @@
 {
   "title": "x402 HTTP Payment Protocol on Sei",
   "description": "Implements the x402 HTTP payment protocol on Sei EVM, enabling pay-per-use API access gated by on-chain USDC micropayments — ideal for AI agents.",
-  "tags": ["x402", "payments", "http", "usdc", "micropayments", "sei", "ai-agents", "evm"],
+  "tags": [
+    "x402",
+    "payments",
+    "http",
+    "usdc",
+    "micropayments",
+    "sei",
+    "ai-agents",
+    "evm"
+  ],
   "difficulty": "intermediate",
   "tooling": ["x402-express", "x402-fetch", "express", "ethers", "typescript"],
   "chain": "sei-mainnet",
-  "docs_urls": [
-    "https://docs.sei.io/evm/x402",
-    "https://docs.x402.org"
-  ],
-  "dependencies": [
-    "x402-express",
-    "x402-fetch",
-    "express",
-    "ethers",
-    "axios"
-  ],
-  "last_verified": "2025-03-25"
+  "docs_urls": ["https://docs.sei.io/evm/x402", "https://docs.x402.org"],
+  "dependencies": ["x402-express", "x402-fetch", "express", "ethers", "axios"],
+  "last_verified": "2026-03-25"
 }

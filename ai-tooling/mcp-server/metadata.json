@@ -1,7 +1,15 @@
 {
   "title": "Sei MCP Server for AI Assistants",
   "description": "Model Context Protocol (MCP) server configuration for connecting Claude Desktop, Cursor, and other AI assistants to the Sei blockchain.",
-  "tags": ["ai-tooling", "mcp", "model-context-protocol", "claude", "cursor", "sei", "evm"],
+  "tags": [
+    "ai-tooling",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "sei",
+    "evm"
+  ],
   "difficulty": "beginner",
   "tooling": ["mcp-server", "claude-desktop", "cursor", "npx"],
   "chain": "sei-mainnet",
@@ -9,8 +17,6 @@
     "https://docs.sei.io/evm/ai-tooling/mcp-server",
     "https://modelcontextprotocol.io"
   ],
-  "dependencies": [
-    "@sei-js/mcp-server"
-  ],
-  "last_verified": "2025-03-25"
+  "dependencies": ["@sei-js/mcp-server"],
+  "last_verified": "2026-03-25"
 }

@@ -9,8 +9,6 @@
     "https://docs.sei.io/evm/bridging/thirdweb",
     "https://portal.thirdweb.com/typescript/v5/components/PayEmbed"
   ],
-  "dependencies": [
-    "thirdweb"
-  ],
-  "last_verified": "2025-03-25"
+  "dependencies": ["thirdweb"],
+  "last_verified": "2026-03-25"
 }

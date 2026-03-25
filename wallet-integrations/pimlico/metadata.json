@@ -1,7 +1,14 @@
 {
   "title": "Pimlico ERC-4337 on Sei",
   "description": "ERC-4337 Account Abstraction on Sei using Pimlico as the bundler and verifying paymaster. Shows SimpleSmartAccount creation, UserOperation sending, and gas sponsorship.",
-  "tags": ["wallet", "pimlico", "account-abstraction", "erc-4337", "gas-sponsorship", "sei"],
+  "tags": [
+    "wallet",
+    "pimlico",
+    "account-abstraction",
+    "erc-4337",
+    "gas-sponsorship",
+    "sei"
+  ],
   "difficulty": "intermediate",
   "tooling": ["react", "viem", "permissionless", "vite", "typescript"],
   "chain": "sei-mainnet",
@@ -9,9 +16,6 @@
     "https://docs.sei.io/evm/wallet-integrations/pimlico",
     "https://docs.pimlico.io/permissionless/how-to/accounts/use-simple-account"
   ],
-  "dependencies": [
-    "permissionless",
-    "viem"
-  ],
-  "last_verified": "2025-03-25"
+  "dependencies": ["permissionless", "viem"],
+  "last_verified": "2026-03-25"
 }

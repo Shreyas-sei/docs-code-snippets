@@ -159,7 +159,7 @@ example-name/
   "chain": "sei-mainnet",
   "docs_urls": ["https://docs.sei.io/evm/..."],
   "dependencies": ["@openzeppelin/contracts"],
-  "last_verified": "2025-03-25"
+  "last_verified": "2026-03-25"
 }
 ```
 

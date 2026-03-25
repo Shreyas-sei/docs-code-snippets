@@ -1,7 +1,15 @@
 {
   "title": "The Graph Subgraph Indexer",
   "description": "Subgraph for indexing ERC-20 Transfer and Approval events on Sei EVM using The Graph, with protocol-level stats and balance tracking.",
-  "tags": ["indexer", "the-graph", "subgraph", "sei", "erc20", "graphql", "evm"],
+  "tags": [
+    "indexer",
+    "the-graph",
+    "subgraph",
+    "sei",
+    "erc20",
+    "graphql",
+    "evm"
+  ],
   "difficulty": "intermediate",
   "tooling": ["graph-cli", "assemblyscript", "graphql"],
   "chain": "sei-mainnet",
@@ -9,9 +17,6 @@
     "https://docs.sei.io/evm/indexers/the-graph",
     "https://thegraph.com/docs/en/developing/creating-a-subgraph/"
   ],
-  "dependencies": [
-    "@graphprotocol/graph-cli",
-    "@graphprotocol/graph-ts"
-  ],
-  "last_verified": "2025-03-25"
+  "dependencies": ["@graphprotocol/graph-cli", "@graphprotocol/graph-ts"],
+  "last_verified": "2026-03-25"
 }
