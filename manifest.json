@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "generated": "2025-03-25",
+  "generated": "2026-03-25",
   "description": "Curated, runnable code examples extracted from the Sei EVM documentation. Structured for developers and AI/LLM systems.",
-  "repo": "sei-code-examples",
+  "repo": "docs-code-snippets",
   "chains": {
     "sei-mainnet": {
       "chain_id": 1329,
@@ -35,7 +35,15 @@
       "title": "ERC20 Token on Sei EVM",
       "description": "A full-featured ERC20 token with mint, burn, pause, and ERC20Permit support. Includes Hardhat and Foundry deployments with tests for the Sei EVM network.",
       "path": "smart-contracts/erc20-token",
-      "tags": ["erc20", "token", "hardhat", "foundry", "openzeppelin", "sei", "deploy"],
+      "tags": [
+        "erc20",
+        "token",
+        "hardhat",
+        "foundry",
+        "openzeppelin",
+        "sei",
+        "deploy"
+      ],
       "difficulty": "beginner",
       "tooling": ["hardhat", "foundry", "ethers"],
       "chain": "sei-mainnet",
@@ -44,7 +52,11 @@
         "https://docs.sei.io/evm/evm-foundry",
         "https://docs.sei.io/evm/evm-wizard"
       ],
-      "dependencies": ["@openzeppelin/contracts", "@nomicfoundation/hardhat-toolbox", "dotenv"],
+      "dependencies": [
+        "@openzeppelin/contracts",
+        "@nomicfoundation/hardhat-toolbox",
+        "dotenv"
+      ],
       "files": [
         "contracts/MyToken.sol",
         "scripts/deploy.js",
@@ -62,7 +74,15 @@
       "title": "ERC721 NFT Collection on Sei EVM",
       "description": "A full-featured ERC721 NFT collection with enumerable, URI storage, pausable, and burnable extensions. Includes Hardhat and Foundry deployments.",
       "path": "smart-contracts/erc721-nft",
-      "tags": ["erc721", "nft", "hardhat", "foundry", "openzeppelin", "sei", "deploy"],
+      "tags": [
+        "erc721",
+        "nft",
+        "hardhat",
+        "foundry",
+        "openzeppelin",
+        "sei",
+        "deploy"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "foundry", "ethers"],
       "chain": "sei-mainnet",
@@ -70,7 +90,11 @@
         "https://docs.sei.io/evm/evm-hardhat",
         "https://docs.sei.io/evm/evm-foundry"
       ],
-      "dependencies": ["@openzeppelin/contracts", "@nomicfoundation/hardhat-toolbox", "dotenv"],
+      "dependencies": [
+        "@openzeppelin/contracts",
+        "@nomicfoundation/hardhat-toolbox",
+        "dotenv"
+      ],
       "files": [
         "contracts/MyNFT.sol",
         "scripts/deploy.js",
@@ -86,7 +110,15 @@
       "title": "UUPS Upgradeable ERC20 Token on Sei EVM",
       "description": "Demonstrates the UUPS proxy pattern with a two-version ERC20 token. V1 is a standard token; V2 adds supply cap and transfer limits.",
       "path": "smart-contracts/upgradeable-uups",
-      "tags": ["uups", "upgradeable", "proxy", "erc20", "hardhat", "openzeppelin", "sei"],
+      "tags": [
+        "uups",
+        "upgradeable",
+        "proxy",
+        "erc20",
+        "hardhat",
+        "openzeppelin",
+        "sei"
+      ],
       "difficulty": "advanced",
       "tooling": ["hardhat", "ethers", "@openzeppelin/hardhat-upgrades"],
       "chain": "sei-mainnet",
@@ -117,7 +149,12 @@
       "chain": "sei-mainnet",
       "docs_urls": ["https://docs.sei.io/evm/evm-foundry"],
       "dependencies": [],
-      "files": ["src/Counter.sol", "test/Counter.t.sol", "script/Deploy.s.sol", "foundry.toml"],
+      "files": [
+        "src/Counter.sol",
+        "test/Counter.t.sol",
+        "script/Deploy.s.sol",
+        "foundry.toml"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -139,13 +176,24 @@
       "title": "Precompile Example Usage (ethers.js)",
       "description": "JavaScript setup and usage examples for Sei EVM precompiles using ethers.js in both browser and Node.js environments.",
       "path": "precompiles/example-usage",
-      "tags": ["precompile", "staking", "governance", "ethers", "sei", "javascript"],
+      "tags": [
+        "precompile",
+        "staking",
+        "governance",
+        "ethers",
+        "sei",
+        "javascript"
+      ],
       "difficulty": "beginner",
       "tooling": ["ethers", "node"],
       "chain": "sei-mainnet",
       "docs_urls": ["https://docs.sei.io/evm/precompiles/example-usage"],
       "dependencies": ["ethers", "@sei-js/evm"],
-      "files": ["setup-ethers.js", "staking-example.js", "governance-example.js"],
+      "files": [
+        "setup-ethers.js",
+        "staking-example.js",
+        "governance-example.js"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -153,13 +201,24 @@
       "title": "Distribution Precompile",
       "description": "Withdraw staking rewards and validator commissions using the Sei Distribution precompile.",
       "path": "precompiles/distribution",
-      "tags": ["precompile", "distribution", "staking", "rewards", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "distribution",
+        "staking",
+        "rewards",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
       "docs_urls": ["https://docs.sei.io/evm/precompiles/distribution"],
       "dependencies": ["@sei-js/evm"],
-      "files": ["interfaces/IDistribution.sol", "YieldAggregator.sol", "ValidatorCommissionManager.sol"],
+      "files": [
+        "interfaces/IDistribution.sol",
+        "YieldAggregator.sol",
+        "ValidatorCommissionManager.sol"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -167,7 +226,14 @@
       "title": "Staking Precompile",
       "description": "Delegate, undelegate, redelegate SEI tokens and query validator/delegation state using the Sei staking precompile.",
       "path": "precompiles/staking",
-      "tags": ["precompile", "staking", "delegation", "validator", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "staking",
+        "delegation",
+        "validator",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -181,7 +247,14 @@
       "title": "Governance Precompile",
       "description": "Cast votes and submit governance proposals on Sei using the governance precompile.",
       "path": "precompiles/governance",
-      "tags": ["precompile", "governance", "voting", "proposals", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "governance",
+        "voting",
+        "proposals",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "beginner",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -195,7 +268,15 @@
       "title": "Oracle Precompile",
       "description": "Read on-chain asset prices and TWAP data from the Sei oracle precompile.",
       "path": "precompiles/oracle",
-      "tags": ["precompile", "oracle", "price-feed", "twap", "defi", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "oracle",
+        "price-feed",
+        "twap",
+        "defi",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -209,7 +290,15 @@
       "title": "JSON Precompile",
       "description": "Parse JSON data on-chain using the Sei JSON precompile — useful for decoding oracle responses and CosmWasm query results.",
       "path": "precompiles/json",
-      "tags": ["precompile", "json", "parsing", "oracle", "cosmwasm", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "json",
+        "parsing",
+        "oracle",
+        "cosmwasm",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -223,7 +312,16 @@
       "title": "P256 Precompile (EIP-7212)",
       "description": "Verify P-256 (secp256r1) signatures on Sei using the EIP-7212 precompile, enabling WebAuthn/Passkey authentication in smart contracts.",
       "path": "precompiles/p256",
-      "tags": ["precompile", "p256", "eip-7212", "webauthn", "passkey", "cryptography", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "p256",
+        "eip-7212",
+        "webauthn",
+        "passkey",
+        "cryptography",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "advanced",
       "tooling": ["hardhat"],
       "chain": "sei-mainnet",
@@ -237,7 +335,17 @@
       "title": "Cosmos Precompiles (addr, bank, CosmWasm, IBC, pointer)",
       "description": "Bridge EVM and Cosmos VM with Sei's addr, bank, CosmWasm, IBC, and pointer precompiles.",
       "path": "precompiles/cosmos",
-      "tags": ["precompile", "cosmos", "bank", "ibc", "cosmwasm", "addr", "pointer", "sei", "solidity"],
+      "tags": [
+        "precompile",
+        "cosmos",
+        "bank",
+        "ibc",
+        "cosmwasm",
+        "addr",
+        "pointer",
+        "sei",
+        "solidity"
+      ],
       "difficulty": "advanced",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -273,8 +381,11 @@
         "https://docs.sei.io/evm/building-a-frontend"
       ],
       "dependencies": [
-        "wagmi", "viem", "@rainbow-me/rainbowkit",
-        "@sei-js/sei-global-wallet", "@tanstack/react-query"
+        "wagmi",
+        "viem",
+        "@rainbow-me/rainbowkit",
+        "@sei-js/sei-global-wallet",
+        "@tanstack/react-query"
       ],
       "files": ["src/App.tsx", "src/wagmi.ts", "package.json"],
       "last_verified": "2025-03-25"
@@ -290,8 +401,11 @@
       "chain": "sei-mainnet",
       "docs_urls": ["https://docs.sei.io/evm/building-a-frontend"],
       "dependencies": [
-        "wagmi", "viem", "@rainbow-me/rainbowkit",
-        "@sei-js/sei-global-wallet", "@tanstack/react-query"
+        "wagmi",
+        "viem",
+        "@rainbow-me/rainbowkit",
+        "@sei-js/sei-global-wallet",
+        "@tanstack/react-query"
       ],
       "files": ["src/ContractInteraction.tsx", "src/App.tsx", "package.json"],
       "last_verified": "2025-03-25"
@@ -310,8 +424,11 @@
         "https://docs.sei.io/evm/building-a-frontend"
       ],
       "dependencies": [
-        "wagmi", "viem", "@rainbow-me/rainbowkit",
-        "@sei-js/sei-global-wallet", "@tanstack/react-query"
+        "wagmi",
+        "viem",
+        "@rainbow-me/rainbowkit",
+        "@sei-js/sei-global-wallet",
+        "@tanstack/react-query"
       ],
       "files": ["src/SwapComponent.tsx", "src/App.tsx", "package.json"],
       "last_verified": "2025-03-25"
@@ -321,7 +438,14 @@
       "title": "Particle Auth + Smart Account on Sei",
       "description": "Social login (Google/Twitter/email) and ERC-4337 Smart Account creation on Sei using Particle Network's Auth Core and Account Abstraction SDK.",
       "path": "wallet-integrations/particle",
-      "tags": ["wallet", "particle", "account-abstraction", "erc-4337", "social-login", "sei"],
+      "tags": [
+        "wallet",
+        "particle",
+        "account-abstraction",
+        "erc-4337",
+        "social-login",
+        "sei"
+      ],
       "difficulty": "intermediate",
       "tooling": ["react", "particle-network", "ethers", "vite", "typescript"],
       "chain": "sei-mainnet",
@@ -329,7 +453,11 @@
         "https://docs.sei.io/evm/wallet-integrations/particle",
         "https://developers.particle.network/"
       ],
-      "dependencies": ["@particle-network/authkit", "@particle-network/aa", "ethers"],
+      "dependencies": [
+        "@particle-network/authkit",
+        "@particle-network/aa",
+        "ethers"
+      ],
       "files": ["src/App.tsx", "src/particleConfig.ts", "package.json"],
       "last_verified": "2025-03-25"
     },
@@ -338,7 +466,14 @@
       "title": "Pimlico ERC-4337 on Sei",
       "description": "ERC-4337 Account Abstraction on Sei using Pimlico as the bundler and verifying paymaster. Shows SimpleSmartAccount creation and gas sponsorship.",
       "path": "wallet-integrations/pimlico",
-      "tags": ["wallet", "pimlico", "account-abstraction", "erc-4337", "gas-sponsorship", "sei"],
+      "tags": [
+        "wallet",
+        "pimlico",
+        "account-abstraction",
+        "erc-4337",
+        "gas-sponsorship",
+        "sei"
+      ],
       "difficulty": "intermediate",
       "tooling": ["react", "viem", "permissionless", "vite", "typescript"],
       "chain": "sei-mainnet",
@@ -355,7 +490,14 @@
       "title": "Thirdweb ERC-4337 Smart Wallet on Sei",
       "description": "EIP-4337 Account Abstraction on Sei using thirdweb SDK v5. Shows in-app wallet setup, smart wallet creation, gasless transactions, and contract read/write.",
       "path": "wallet-integrations/thirdweb-4337",
-      "tags": ["wallet", "thirdweb", "account-abstraction", "erc-4337", "gasless", "sei"],
+      "tags": [
+        "wallet",
+        "thirdweb",
+        "account-abstraction",
+        "erc-4337",
+        "gasless",
+        "sei"
+      ],
       "difficulty": "intermediate",
       "tooling": ["react", "thirdweb", "vite", "typescript"],
       "chain": "sei-mainnet",
@@ -364,7 +506,12 @@
         "https://portal.thirdweb.com/typescript/v5/smartWallet"
       ],
       "dependencies": ["thirdweb"],
-      "files": ["src/client.ts", "src/App.tsx", "contracts/Storage.sol", "package.json"],
+      "files": [
+        "src/client.ts",
+        "src/App.tsx",
+        "contracts/Storage.sol",
+        "package.json"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -372,7 +519,14 @@
       "title": "Thirdweb EIP-7702 Wallet on Sei",
       "description": "EIP-7702 wallet delegation on Sei using thirdweb SDK v5. The EOA gains smart contract capabilities temporarily — no new address, gasless transactions.",
       "path": "wallet-integrations/thirdweb-7702",
-      "tags": ["wallet", "thirdweb", "eip-7702", "gasless", "sei", "account-abstraction"],
+      "tags": [
+        "wallet",
+        "thirdweb",
+        "eip-7702",
+        "gasless",
+        "sei",
+        "account-abstraction"
+      ],
       "difficulty": "intermediate",
       "tooling": ["react", "thirdweb", "vite", "typescript"],
       "chain": "sei-mainnet",
@@ -403,7 +557,11 @@
         "@nomicfoundation/hardhat-toolbox",
         "hardhat"
       ],
-      "files": ["contracts/MyOFT.sol", "hardhat.config.js", "scripts/deploy.js"],
+      "files": [
+        "contracts/MyOFT.sol",
+        "hardhat.config.js",
+        "scripts/deploy.js"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -445,7 +603,15 @@
       "title": "Pyth Network Price Feeds",
       "description": "Consuming Pyth Network pull-based price feeds on Sei EVM, including fetching VAAs from the Hermes API and on-chain price updates.",
       "path": "oracles/pyth",
-      "tags": ["oracle", "pyth", "sei", "price-feed", "pull-oracle", "hermes", "evm"],
+      "tags": [
+        "oracle",
+        "pyth",
+        "sei",
+        "price-feed",
+        "pull-oracle",
+        "hermes",
+        "evm"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "ethers", "axios"],
       "chain": "sei-mainnet",
@@ -479,7 +645,15 @@
       "title": "API3 dAPI Consumer",
       "description": "Reading API3 dAPI (decentralised API) price feeds on Sei EVM via proxy contracts deployed through the API3 Market.",
       "path": "oracles/api3",
-      "tags": ["oracle", "api3", "dapi", "sei", "price-feed", "first-party", "evm"],
+      "tags": [
+        "oracle",
+        "api3",
+        "dapi",
+        "sei",
+        "price-feed",
+        "first-party",
+        "evm"
+      ],
       "difficulty": "beginner",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -496,7 +670,16 @@
       "title": "Pyth Entropy VRF — Dice Game",
       "description": "Complete on-chain dice game using Pyth Entropy for verifiable randomness on Sei EVM. Demonstrates the request-callback VRF pattern with IEntropyConsumer.",
       "path": "vrf/pyth",
-      "tags": ["vrf", "randomness", "pyth", "entropy", "sei", "dice-game", "evm", "callback"],
+      "tags": [
+        "vrf",
+        "randomness",
+        "pyth",
+        "entropy",
+        "sei",
+        "dice-game",
+        "evm",
+        "callback"
+      ],
       "difficulty": "intermediate",
       "tooling": ["hardhat", "ethers", "pyth-entropy-sdk"],
       "chain": "sei-mainnet",
@@ -513,7 +696,16 @@
       "title": "Goldsky Subgraph Indexer",
       "description": "Goldsky subgraph for indexing ERC-20 Transfer and Approval events on Sei EVM, with balance tracking and aggregate stats.",
       "path": "indexers/goldsky",
-      "tags": ["indexer", "goldsky", "subgraph", "sei", "erc20", "graphql", "the-graph", "evm"],
+      "tags": [
+        "indexer",
+        "goldsky",
+        "subgraph",
+        "sei",
+        "erc20",
+        "graphql",
+        "the-graph",
+        "evm"
+      ],
       "difficulty": "intermediate",
       "tooling": ["goldsky-cli", "graph-cli", "assemblyscript"],
       "chain": "sei-mainnet",
@@ -522,7 +714,11 @@
         "https://docs.goldsky.com/subgraphs/deploying-subgraphs"
       ],
       "dependencies": ["@graphprotocol/graph-cli", "@graphprotocol/graph-ts"],
-      "files": ["subgraph/subgraph.yaml", "subgraph/schema.graphql", "subgraph/src/mapping.ts"],
+      "files": [
+        "subgraph/subgraph.yaml",
+        "subgraph/schema.graphql",
+        "subgraph/src/mapping.ts"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -530,7 +726,15 @@
       "title": "The Graph Subgraph Indexer",
       "description": "Subgraph for indexing ERC-20 Transfer and Approval events on Sei EVM using The Graph, with protocol-level stats and balance tracking.",
       "path": "indexers/the-graph",
-      "tags": ["indexer", "the-graph", "subgraph", "sei", "erc20", "graphql", "evm"],
+      "tags": [
+        "indexer",
+        "the-graph",
+        "subgraph",
+        "sei",
+        "erc20",
+        "graphql",
+        "evm"
+      ],
       "difficulty": "intermediate",
       "tooling": ["graph-cli", "assemblyscript", "graphql"],
       "chain": "sei-mainnet",
@@ -539,7 +743,11 @@
         "https://thegraph.com/docs/en/developing/creating-a-subgraph/"
       ],
       "dependencies": ["@graphprotocol/graph-cli", "@graphprotocol/graph-ts"],
-      "files": ["subgraph/subgraph.yaml", "subgraph/schema.graphql", "subgraph/src/mapping.ts"],
+      "files": [
+        "subgraph/subgraph.yaml",
+        "subgraph/schema.graphql",
+        "subgraph/src/mapping.ts"
+      ],
       "last_verified": "2025-03-25"
     },
     {
@@ -547,7 +755,16 @@
       "title": "Moralis Streams Indexer",
       "description": "Real-time blockchain event indexing for Sei EVM using Moralis Streams, with stream setup and Express webhook handler for ERC-20 events.",
       "path": "indexers/moralis",
-      "tags": ["indexer", "moralis", "streams", "webhooks", "sei", "erc20", "real-time", "evm"],
+      "tags": [
+        "indexer",
+        "moralis",
+        "streams",
+        "webhooks",
+        "sei",
+        "erc20",
+        "real-time",
+        "evm"
+      ],
       "difficulty": "beginner",
       "tooling": ["moralis", "express", "node"],
       "chain": "sei-mainnet",
@@ -564,7 +781,15 @@
       "title": "Sei MCP Server for AI Assistants",
       "description": "Model Context Protocol (MCP) server configuration for connecting Claude Desktop, Cursor, and other AI assistants to the Sei blockchain.",
       "path": "ai-tooling/mcp-server",
-      "tags": ["ai-tooling", "mcp", "model-context-protocol", "claude", "cursor", "sei", "evm"],
+      "tags": [
+        "ai-tooling",
+        "mcp",
+        "model-context-protocol",
+        "claude",
+        "cursor",
+        "sei",
+        "evm"
+      ],
       "difficulty": "beginner",
       "tooling": ["mcp-server", "claude-desktop", "cursor", "npx"],
       "chain": "sei-mainnet",
@@ -581,17 +806,35 @@
       "title": "Cambrian Agent Kit — AI Agents on Sei",
       "description": "AI agent setup using Cambrian Agent Kit and LangChain ReAct pattern to interact with the Sei blockchain via natural language.",
       "path": "ai-tooling/cambrian",
-      "tags": ["ai-tooling", "cambrian", "agent-kit", "langchain", "openai", "sei", "evm", "llm"],
+      "tags": [
+        "ai-tooling",
+        "cambrian",
+        "agent-kit",
+        "langchain",
+        "openai",
+        "sei",
+        "evm",
+        "llm"
+      ],
       "difficulty": "intermediate",
-      "tooling": ["cambrian-agent-kit", "langchain", "openai", "ethers", "typescript"],
+      "tooling": [
+        "cambrian-agent-kit",
+        "langchain",
+        "openai",
+        "ethers",
+        "typescript"
+      ],
       "chain": "sei-mainnet",
       "docs_urls": [
         "https://docs.sei.io/evm/ai-tooling/cambrian",
         "https://docs.cambrian.ai"
       ],
       "dependencies": [
-        "@cambrian-ai/agent-kit", "@langchain/core",
-        "@langchain/langgraph", "@langchain/openai", "ethers"
+        "@cambrian-ai/agent-kit",
+        "@langchain/core",
+        "@langchain/langgraph",
+        "@langchain/openai",
+        "ethers"
       ],
       "files": ["src/agent.ts", "package.json"],
       "last_verified": "2025-03-25"
@@ -601,7 +844,16 @@
       "title": "USDC Integration on Sei",
       "description": "Common USDC integration patterns on Sei EVM: approve/transferFrom, EIP-2612 permit, deposits, withdrawals, and direct payments with blacklist checks.",
       "path": "protocols/usdc",
-      "tags": ["usdc", "stablecoin", "circle", "erc20", "sei", "permit", "eip2612", "evm"],
+      "tags": [
+        "usdc",
+        "stablecoin",
+        "circle",
+        "erc20",
+        "sei",
+        "permit",
+        "eip2612",
+        "evm"
+      ],
       "difficulty": "beginner",
       "tooling": ["hardhat", "ethers"],
       "chain": "sei-mainnet",
@@ -618,15 +870,33 @@
       "title": "x402 HTTP Payment Protocol on Sei",
       "description": "Implements the x402 HTTP payment protocol on Sei EVM — pay-per-use API access gated by on-chain USDC micropayments, ideal for AI agents.",
       "path": "protocols/x402",
-      "tags": ["x402", "payments", "http", "usdc", "micropayments", "sei", "ai-agents", "evm"],
-      "difficulty": "intermediate",
-      "tooling": ["x402-express", "x402-fetch", "express", "ethers", "typescript"],
-      "chain": "sei-mainnet",
-      "docs_urls": [
-        "https://docs.sei.io/evm/x402",
-        "https://docs.x402.org"
+      "tags": [
+        "x402",
+        "payments",
+        "http",
+        "usdc",
+        "micropayments",
+        "sei",
+        "ai-agents",
+        "evm"
       ],
-      "dependencies": ["x402-express", "x402-fetch", "express", "ethers", "axios"],
+      "difficulty": "intermediate",
+      "tooling": [
+        "x402-express",
+        "x402-fetch",
+        "express",
+        "ethers",
+        "typescript"
+      ],
+      "chain": "sei-mainnet",
+      "docs_urls": ["https://docs.sei.io/evm/x402", "https://docs.x402.org"],
+      "dependencies": [
+        "x402-express",
+        "x402-fetch",
+        "express",
+        "ethers",
+        "axios"
+      ],
       "files": ["server/payment-server.ts", "client/payment-client.ts"],
       "last_verified": "2025-03-25"
     }
@@ -651,10 +921,21 @@
       "advanced": 5
     },
     "tooling_coverage": [
-      "hardhat", "foundry", "ethers", "viem", "wagmi",
-      "react", "typescript", "solidity", "vyper",
-      "thirdweb", "layerzero", "pyth", "chainlink",
-      "assemblyscript", "langchain"
+      "hardhat",
+      "foundry",
+      "ethers",
+      "viem",
+      "wagmi",
+      "react",
+      "typescript",
+      "solidity",
+      "vyper",
+      "thirdweb",
+      "layerzero",
+      "pyth",
+      "chainlink",
+      "assemblyscript",
+      "langchain"
     ]
   }
 }

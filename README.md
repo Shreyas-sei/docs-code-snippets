@@ -5,8 +5,8 @@ Curated repository of complete, runnable code examples extracted from the [Sei E
 ## Quick Start
 
 ```bash
-git clone https://github.com/your-org/sei-code-examples
-cd sei-code-examples
+git clone https://github.com/your-org/docs-code-snippets
+cd docs-code-snippets
 ```
 
 Pick an example, install its dependencies, and run it:
@@ -19,15 +19,15 @@ npx hardhat run scripts/deploy.js --network sei-testnet
 
 ## Network Details
 
-| Network | Chain ID | RPC | Explorer |
-|---|---|---|---|
-| Sei Mainnet | 1329 | https://evm-rpc.sei-apis.com | https://seitrace.com |
-| Sei Testnet (atlantic-2) | 1328 | https://evm-rpc-testnet.sei-apis.com | https://seitrace.com/?chain=atlantic-2 |
+| Network                  | Chain ID | RPC                                  | Explorer                               |
+| ------------------------ | -------- | ------------------------------------ | -------------------------------------- |
+| Sei Mainnet              | 1329     | https://evm-rpc.sei-apis.com         | https://seitrace.com                   |
+| Sei Testnet (atlantic-2) | 1328     | https://evm-rpc-testnet.sei-apis.com | https://seitrace.com/?chain=atlantic-2 |
 
 ## Repository Structure
 
 ```
-sei-code-examples/
+docs-code-snippets/
 ├── llms.txt                        # AI-friendly index of all examples
 ├── manifest.json                   # Machine-readable registry (tags, metadata, chain info)
 ├── README.md                       # This file
@@ -98,43 +98,43 @@ sei-code-examples/
 
 ## Example Index
 
-| Example | Difficulty | Tooling | Category |
-|---|---|---|---|
-| [Getting Started](smart-contracts/getting-started/) | Beginner | solc, vyper | Smart Contracts |
-| [ERC20 Token](smart-contracts/erc20-token/) | Beginner | Hardhat, Foundry | Smart Contracts |
-| [ERC721 NFT](smart-contracts/erc721-nft/) | Intermediate | Hardhat, Foundry | Smart Contracts |
-| [UUPS Upgradeable](smart-contracts/upgradeable-uups/) | Advanced | Hardhat | Smart Contracts |
-| [Counter + Fuzz Tests](smart-contracts/counter/) | Beginner | Foundry | Smart Contracts |
-| [Contract Verification](smart-contracts/verification/) | Beginner | Hardhat, Foundry | Smart Contracts |
-| [Precompile Examples (JS)](precompiles/example-usage/) | Beginner | ethers.js | Precompiles |
-| [Distribution Precompile](precompiles/distribution/) | Intermediate | Hardhat | Precompiles |
-| [Staking Precompile](precompiles/staking/) | Intermediate | Hardhat | Precompiles |
-| [Governance Precompile](precompiles/governance/) | Beginner | Hardhat | Precompiles |
-| [Oracle Precompile](precompiles/oracle/) | Intermediate | Hardhat | Precompiles |
-| [JSON Precompile](precompiles/json/) | Intermediate | Hardhat | Precompiles |
-| [P256 Precompile (EIP-7212)](precompiles/p256/) | Advanced | Hardhat | Precompiles |
-| [Cosmos Precompiles](precompiles/cosmos/) | Advanced | Hardhat | Precompiles |
-| [Connect Wallet](frontend/connect-wallet/) | Beginner | wagmi, RainbowKit | Frontend |
-| [Read/Write Contract](frontend/read-write-contract/) | Beginner | wagmi | Frontend |
-| [In-App Swaps](frontend/in-app-swaps/) | Intermediate | wagmi | Frontend |
-| [Particle Auth + AA](wallet-integrations/particle/) | Intermediate | Particle Network | Wallet |
-| [Pimlico ERC-4337](wallet-integrations/pimlico/) | Intermediate | Pimlico | Wallet |
-| [Thirdweb ERC-4337](wallet-integrations/thirdweb-4337/) | Intermediate | Thirdweb | Wallet |
-| [Thirdweb EIP-7702](wallet-integrations/thirdweb-7702/) | Intermediate | Thirdweb | Wallet |
-| [LayerZero OFT Bridge](bridging/layerzero/) | Intermediate | LayerZero v2 | Bridging |
-| [Thirdweb Bridge](bridging/thirdweb/) | Beginner | Thirdweb | Bridging |
-| [Chainlink Oracle](oracles/chainlink/) | Beginner | Chainlink | Oracles |
-| [Pyth Price Feeds](oracles/pyth/) | Intermediate | Pyth | Oracles |
-| [RedStone Oracle](oracles/redstone/) | Intermediate | RedStone | Oracles |
-| [API3 dAPI](oracles/api3/) | Beginner | API3 | Oracles |
-| [Pyth VRF Dice Game](vrf/pyth/) | Intermediate | Pyth Entropy | VRF |
-| [Goldsky Subgraph](indexers/goldsky/) | Intermediate | Goldsky CLI | Indexers |
-| [The Graph Subgraph](indexers/the-graph/) | Intermediate | Graph CLI | Indexers |
-| [Moralis Streams](indexers/moralis/) | Beginner | Moralis | Indexers |
-| [Sei MCP Server](ai-tooling/mcp-server/) | Beginner | MCP | AI Tooling |
-| [Cambrian Agent Kit](ai-tooling/cambrian/) | Intermediate | LangChain | AI Tooling |
-| [USDC Integration](protocols/usdc/) | Beginner | Hardhat | Protocols |
-| [x402 Payments](protocols/x402/) | Intermediate | Express | Protocols |
+| Example                                                 | Difficulty   | Tooling           | Category        |
+| ------------------------------------------------------- | ------------ | ----------------- | --------------- |
+| [Getting Started](smart-contracts/getting-started/)     | Beginner     | solc, vyper       | Smart Contracts |
+| [ERC20 Token](smart-contracts/erc20-token/)             | Beginner     | Hardhat, Foundry  | Smart Contracts |
+| [ERC721 NFT](smart-contracts/erc721-nft/)               | Intermediate | Hardhat, Foundry  | Smart Contracts |
+| [UUPS Upgradeable](smart-contracts/upgradeable-uups/)   | Advanced     | Hardhat           | Smart Contracts |
+| [Counter + Fuzz Tests](smart-contracts/counter/)        | Beginner     | Foundry           | Smart Contracts |
+| [Contract Verification](smart-contracts/verification/)  | Beginner     | Hardhat, Foundry  | Smart Contracts |
+| [Precompile Examples (JS)](precompiles/example-usage/)  | Beginner     | ethers.js         | Precompiles     |
+| [Distribution Precompile](precompiles/distribution/)    | Intermediate | Hardhat           | Precompiles     |
+| [Staking Precompile](precompiles/staking/)              | Intermediate | Hardhat           | Precompiles     |
+| [Governance Precompile](precompiles/governance/)        | Beginner     | Hardhat           | Precompiles     |
+| [Oracle Precompile](precompiles/oracle/)                | Intermediate | Hardhat           | Precompiles     |
+| [JSON Precompile](precompiles/json/)                    | Intermediate | Hardhat           | Precompiles     |
+| [P256 Precompile (EIP-7212)](precompiles/p256/)         | Advanced     | Hardhat           | Precompiles     |
+| [Cosmos Precompiles](precompiles/cosmos/)               | Advanced     | Hardhat           | Precompiles     |
+| [Connect Wallet](frontend/connect-wallet/)              | Beginner     | wagmi, RainbowKit | Frontend        |
+| [Read/Write Contract](frontend/read-write-contract/)    | Beginner     | wagmi             | Frontend        |
+| [In-App Swaps](frontend/in-app-swaps/)                  | Intermediate | wagmi             | Frontend        |
+| [Particle Auth + AA](wallet-integrations/particle/)     | Intermediate | Particle Network  | Wallet          |
+| [Pimlico ERC-4337](wallet-integrations/pimlico/)        | Intermediate | Pimlico           | Wallet          |
+| [Thirdweb ERC-4337](wallet-integrations/thirdweb-4337/) | Intermediate | Thirdweb          | Wallet          |
+| [Thirdweb EIP-7702](wallet-integrations/thirdweb-7702/) | Intermediate | Thirdweb          | Wallet          |
+| [LayerZero OFT Bridge](bridging/layerzero/)             | Intermediate | LayerZero v2      | Bridging        |
+| [Thirdweb Bridge](bridging/thirdweb/)                   | Beginner     | Thirdweb          | Bridging        |
+| [Chainlink Oracle](oracles/chainlink/)                  | Beginner     | Chainlink         | Oracles         |
+| [Pyth Price Feeds](oracles/pyth/)                       | Intermediate | Pyth              | Oracles         |
+| [RedStone Oracle](oracles/redstone/)                    | Intermediate | RedStone          | Oracles         |
+| [API3 dAPI](oracles/api3/)                              | Beginner     | API3              | Oracles         |
+| [Pyth VRF Dice Game](vrf/pyth/)                         | Intermediate | Pyth Entropy      | VRF             |
+| [Goldsky Subgraph](indexers/goldsky/)                   | Intermediate | Goldsky CLI       | Indexers        |
+| [The Graph Subgraph](indexers/the-graph/)               | Intermediate | Graph CLI         | Indexers        |
+| [Moralis Streams](indexers/moralis/)                    | Beginner     | Moralis           | Indexers        |
+| [Sei MCP Server](ai-tooling/mcp-server/)                | Beginner     | MCP               | AI Tooling      |
+| [Cambrian Agent Kit](ai-tooling/cambrian/)              | Intermediate | LangChain         | AI Tooling      |
+| [USDC Integration](protocols/usdc/)                     | Beginner     | Hardhat           | Protocols       |
+| [x402 Payments](protocols/x402/)                        | Intermediate | Express           | Protocols       |
 
 ## Per-Example Structure
 

@@ -1,4 +1,4 @@
-# sei-code-examples
+# docs-code-snippets
 
 Curated, runnable code examples extracted from the Sei EVM documentation.
 Source: https://docs.sei.io/evm

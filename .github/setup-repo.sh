@@ -4,7 +4,7 @@
 
 set -e
 
-REPO="$(gh repo view --json nameWithOwner -q .nameWithOwner 2>/dev/null || echo 'YOUR_ORG/sei-code-examples')"
+REPO="$(gh repo view --json nameWithOwner -q .nameWithOwner 2>/dev/null || echo 'YOUR_ORG/docs-code-snippets')"
 
 echo "Setting description and topics for $REPO ..."
 
