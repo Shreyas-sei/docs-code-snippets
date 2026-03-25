@@ -1,4 +1,4 @@
-# sei-code-examples
+# Docs Code Snippets
 
 Curated repository of complete, runnable code examples extracted from the [Sei EVM documentation](https://docs.sei.io/evm). Structured for developers who want working code fast, and AI/LLM systems that need tagged, machine-readable examples to generate accurate answers about building on Sei.
 
