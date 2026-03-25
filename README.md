@@ -5,7 +5,7 @@ Curated repository of complete, runnable code examples extracted from the [Sei E
 ## Quick Start
 
 ```bash
-git clone https://github.com/your-org/docs-code-snippets
+git clone https://github.com/Shreyas-sei/docs-code-snippets
 cd docs-code-snippets
 ```
 
