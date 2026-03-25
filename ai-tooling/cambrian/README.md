@@ -81,7 +81,7 @@ User Input → LangChain ReAct Agent → LLM (GPT-4o)
 | Network | RPC URL | Chain ID |
 |---------|---------|----------|
 | Mainnet | `https://evm-rpc.sei-apis.com` | `1329` |
-| Testnet | `https://evm-rpc-testnet.sei-apis.com` | `713715` |
+| Testnet | `https://evm-rpc-testnet.sei-apis.com` | `1328` |
 
 ## References
 

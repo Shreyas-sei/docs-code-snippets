@@ -11,7 +11,7 @@
  *
  * Sei chain ID in Moralis:
  *   Mainnet: 0x531 (1329 decimal)
- *   Testnet: 0xAE6B3 (713715 decimal)
+ *   Testnet: 0xAE6B3 (1328 decimal)
  */
 
 const Moralis = require("moralis").default;

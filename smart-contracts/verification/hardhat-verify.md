@@ -26,7 +26,7 @@ module.exports = {
     },
     "sei-testnet": {
       url: "https://evm-rpc-testnet.sei-apis.com",
-      chainId: 713715,
+      chainId: 1328,
       accounts: [process.env.PRIVATE_KEY],
     },
   },
@@ -46,7 +46,7 @@ module.exports = {
       },
       {
         network: "sei-testnet",
-        chainId: 713715,
+        chainId: 1328,
         urls: {
           apiURL: "https://seitrace.com/api?chain=atlantic-2",
           browserURL: "https://testnet.seitrace.com",

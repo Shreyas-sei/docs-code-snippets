@@ -27,7 +27,7 @@ sei-testnet = "https://evm-rpc-testnet.sei-apis.com"
 
 [etherscan]
 sei = { key = "${SEITRACE_API_KEY}", url = "https://seitrace.com/api", chain = 1329 }
-sei-testnet = { key = "${SEITRACE_API_KEY}", url = "https://seitrace.com/api?chain=atlantic-2", chain = 713715 }
+sei-testnet = { key = "${SEITRACE_API_KEY}", url = "https://seitrace.com/api?chain=atlantic-2", chain = 1328 }
 ```
 
 ## Verify During Deployment
@@ -93,11 +93,11 @@ forge verify-contract <CONTRACT_ADDRESS> src/MyToken.sol:MyToken \
   --constructor-args-path constructor-args.txt
 ```
 
-## Verify on Sei Testnet (Chain ID 713715)
+## Verify on Sei Testnet (Chain ID 1328)
 
 ```bash
 forge verify-contract <CONTRACT_ADDRESS> src/Counter.sol:Counter \
-  --chain 713715 \
+  --chain 1328 \
   --verifier-url "https://seitrace.com/api?chain=atlantic-2" \
   --etherscan-api-key $SEITRACE_API_KEY
 ```
@@ -123,7 +123,7 @@ forge inspect src/MyToken.sol:MyToken metadata
 
 | Flag | Description |
 |------|-------------|
-| `--chain` | Chain ID (1329 for mainnet, 713715 for testnet) |
+| `--chain` | Chain ID (1329 for mainnet, 1328 for testnet) |
 | `--verifier-url` | Seitrace API URL |
 | `--etherscan-api-key` | Your Seitrace API key |
 | `--constructor-args` | ABI-encoded constructor arguments |

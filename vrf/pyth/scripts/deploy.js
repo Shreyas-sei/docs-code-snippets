@@ -20,8 +20,8 @@ const { ethers } = require("hardhat");
 const ENTROPY_ADDRESSES = {
   // Sei Mainnet (chain ID 1329)
   1329: "0x98046Bd286715D3B0BC227Dd7a956b83D8978603",
-  // Sei Testnet (chain ID 713715)
-  713715: "0x98046Bd286715D3B0BC227Dd7a956b83D8978603",
+  // Sei Testnet (chain ID 1328)
+  1328: "0x98046Bd286715D3B0BC227Dd7a956b83D8978603",
 };
 
 async function main() {

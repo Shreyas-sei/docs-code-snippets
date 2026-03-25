@@ -85,7 +85,7 @@ npx hardhat verify --network sei <IMPLEMENTATION_V2_ADDRESS>
 | Network  | RPC URL                                   | Chain ID |
 |----------|-------------------------------------------|----------|
 | Mainnet  | https://evm-rpc.sei-apis.com             | 1329     |
-| Testnet  | https://evm-rpc-testnet.sei-apis.com     | 713715   |
+| Testnet  | https://evm-rpc-testnet.sei-apis.com     | 1328   |
 
 ## Resources
 

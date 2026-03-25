@@ -10,7 +10,7 @@
       "explorer": "https://seitrace.com"
     },
     "sei-testnet": {
-      "chain_id": 713715,
+      "chain_id": 1328,
       "rpc": "https://evm-rpc-testnet.sei-apis.com",
       "explorer": "https://seitrace.com/?chain=atlantic-2"
     }

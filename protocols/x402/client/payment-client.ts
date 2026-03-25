@@ -30,7 +30,7 @@ const SEI_RPC = USE_TESTNET
   ? "https://evm-rpc-testnet.sei-apis.com"
   : "https://evm-rpc.sei-apis.com";
 
-const SEI_CHAIN_ID = USE_TESTNET ? 713715 : 1329;
+const SEI_CHAIN_ID = USE_TESTNET ? 1328 : 1329;
 
 const USDC_ADDRESS = USE_TESTNET
   ? "0x0000000000000000000000000000000000000000" // replace with testnet USDC

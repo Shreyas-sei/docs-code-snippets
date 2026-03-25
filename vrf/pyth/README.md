@@ -23,7 +23,7 @@ This model prevents front-running because the final randomness is the hash of bo
 | Network | Pyth Entropy Contract |
 |---------|----------------------|
 | Sei Mainnet (1329) | `0x98046Bd286715D3B0BC227Dd7a956b83D8978603` |
-| Sei Testnet (713715) | `0x98046Bd286715D3B0BC227Dd7a956b83D8978603` |
+| Sei Testnet (1328) | `0x98046Bd286715D3B0BC227Dd7a956b83D8978603` |
 
 ## Setup
 
@@ -47,7 +47,7 @@ module.exports = {
     },
     seiTestnet: {
       url: "https://evm-rpc-testnet.sei-apis.com",
-      chainId: 713715,
+      chainId: 1328,
       accounts: [process.env.PRIVATE_KEY],
     },
   },

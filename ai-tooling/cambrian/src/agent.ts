@@ -40,7 +40,7 @@ if (!PRIVATE_KEY || !OPENAI_API_KEY) {
 
 async function createSeiAgent() {
   const rpcUrl = USE_TESTNET ? SEI_TESTNET_RPC : SEI_MAINNET_RPC;
-  const chainId = USE_TESTNET ? 713715 : 1329;
+  const chainId = USE_TESTNET ? 1328 : 1329;
 
   console.log(`Initialising Cambrian Agent Kit on Sei ${USE_TESTNET ? "Testnet" : "Mainnet"}`);
   console.log(`RPC: ${rpcUrl} | Chain ID: ${chainId}`);
@@ -90,7 +90,7 @@ You have access to tools for:
 
 Always confirm transaction details with the user before executing state-changing operations.
 When reporting balances or amounts, always include the token symbol and format with appropriate decimals.
-The current network is Sei ${USE_TESTNET ? "Testnet (chain ID 713715)" : "Mainnet (chain ID 1329)"}.
+The current network is Sei ${USE_TESTNET ? "Testnet (chain ID 1328)" : "Mainnet (chain ID 1329)"}.
 Your wallet address is: ${walletAddress}
     `.trim(),
   });

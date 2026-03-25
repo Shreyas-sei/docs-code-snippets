@@ -22,7 +22,7 @@ Moralis Streams is a webhook-based system for streaming blockchain data in real 
 | Network | Hex Chain ID | Decimal |
 |---------|-------------|---------|
 | Sei Mainnet | `0x531` | 1329 |
-| Sei Testnet | `0xAE6B3` | 713715 |
+| Sei Testnet | `0xAE6B3` | 1328 |
 
 ## Setup
 

@@ -7,7 +7,7 @@ Repo structure: function-based taxonomy organized by what the code does.
 ## Network Info
 
 - Sei Mainnet: chain_id=1329, rpc=https://evm-rpc.sei-apis.com, explorer=https://seitrace.com
-- Sei Testnet: chain_id=713715, rpc=https://evm-rpc-testnet.sei-apis.com
+- Sei Testnet: chain_id=1328, rpc=https://evm-rpc-testnet.sei-apis.com
 
 ## Smart Contracts
 

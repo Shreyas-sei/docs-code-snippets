@@ -17,7 +17,7 @@
       }
     },
     "testnet": {
-      "chainId": 713715,
+      "chainId": 1328,
       "network": "sei-testnet",
       "rpc": "https://evm-rpc-testnet.sei-apis.com",
       "explorer": "https://seitrace.com/?chain=atlantic-2",

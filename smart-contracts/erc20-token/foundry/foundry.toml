@@ -14,7 +14,7 @@ sei-testnet = "https://evm-rpc-testnet.sei-apis.com"
 
 [etherscan]
 sei = { key = "${SEITRACE_API_KEY}", url = "https://seitrace.com/api", chain = 1329 }
-sei-testnet = { key = "${SEITRACE_API_KEY}", url = "https://seitrace.com/api?chain=atlantic-2", chain = 713715 }
+sei-testnet = { key = "${SEITRACE_API_KEY}", url = "https://seitrace.com/api?chain=atlantic-2", chain = 1328 }
 
 [fmt]
 line_length = 100

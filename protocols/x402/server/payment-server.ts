@@ -40,7 +40,7 @@ const SEI_MAINNET = {
 
 const SEI_TESTNET = {
   rpcUrl: "https://evm-rpc-testnet.sei-apis.com",
-  chainId: 713715,
+  chainId: 1328,
   usdcAddress: "0x0000000000000000000000000000000000000000", // update with testnet USDC
 };
 

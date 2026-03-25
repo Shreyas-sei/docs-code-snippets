@@ -22,7 +22,7 @@ npx hardhat run scripts/deploy.js --network sei-testnet
 | Network | Chain ID | RPC | Explorer |
 |---|---|---|---|
 | Sei Mainnet | 1329 | https://evm-rpc.sei-apis.com | https://seitrace.com |
-| Sei Testnet (atlantic-2) | 713715 | https://evm-rpc-testnet.sei-apis.com | https://seitrace.com/?chain=atlantic-2 |
+| Sei Testnet (atlantic-2) | 1328 | https://evm-rpc-testnet.sei-apis.com | https://seitrace.com/?chain=atlantic-2 |
 
 ## Repository Structure
 

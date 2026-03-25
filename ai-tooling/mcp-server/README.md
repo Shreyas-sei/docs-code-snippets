@@ -116,7 +116,7 @@ Convert this Sei cosmos address to its EVM equivalent: sei1abc...
 | Parameter | Mainnet | Testnet |
 |-----------|---------|---------|
 | RPC URL | `https://evm-rpc.sei-apis.com` | `https://evm-rpc-testnet.sei-apis.com` |
-| Chain ID | `1329` | `713715` |
+| Chain ID | `1329` | `1328` |
 | Explorer | `https://seitrace.com` | `https://seitrace.com/?chain=atlantic-2` |
 
 ## References

@@ -15,7 +15,7 @@
       "args": ["-y", "@sei-js/mcp-server"],
       "env": {
         "SEI_RPC_URL": "https://evm-rpc-testnet.sei-apis.com",
-        "SEI_CHAIN_ID": "713715",
+        "SEI_CHAIN_ID": "1328",
         "SEI_NETWORK": "testnet"
       }
     }
