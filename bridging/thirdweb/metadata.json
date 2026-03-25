@@ -1,0 +1,16 @@
+{
+  "title": "Thirdweb Universal Bridge on Sei",
+  "description": "Cross-chain token bridging and buying on Sei using thirdweb's PayEmbed component. Supports 350+ chains and 20,000+ tokens with a single drop-in React component.",
+  "tags": ["bridging", "thirdweb", "cross-chain", "sei", "react", "defi"],
+  "difficulty": "beginner",
+  "tooling": ["react", "thirdweb", "vite", "typescript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/bridging/thirdweb",
+    "https://portal.thirdweb.com/typescript/v5/components/PayEmbed"
+  ],
+  "dependencies": [
+    "thirdweb"
+  ],
+  "last_verified": "2025-03-25"
+}

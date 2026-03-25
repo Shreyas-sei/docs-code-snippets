@@ -1,0 +1,20 @@
+{
+  "title": "Connect Wallet — RainbowKit + Sei Global Wallet",
+  "description": "Set up a React dApp on Sei EVM using RainbowKit, wagmi, and the Sei Global Wallet (EIP-6963). Shows wallet connection, account info, and balance display.",
+  "tags": ["frontend", "wagmi", "sei", "wallet", "rainbowkit", "eip-6963"],
+  "difficulty": "beginner",
+  "tooling": ["react", "wagmi", "viem", "rainbowkit", "vite", "typescript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/sei-global-wallet",
+    "https://docs.sei.io/evm/building-a-frontend"
+  ],
+  "dependencies": [
+    "wagmi",
+    "viem",
+    "@rainbow-me/rainbowkit",
+    "@sei-js/sei-global-wallet",
+    "@tanstack/react-query"
+  ],
+  "last_verified": "2025-03-25"
+}

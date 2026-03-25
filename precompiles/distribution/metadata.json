@@ -1,0 +1,11 @@
+{
+  "title": "Distribution Precompile",
+  "description": "Withdraw staking rewards and validator commissions using the Sei Distribution precompile",
+  "tags": ["precompile", "distribution", "staking", "rewards", "sei", "solidity"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": ["https://docs.sei.io/evm/precompiles/distribution"],
+  "dependencies": ["@sei-js/evm"],
+  "last_verified": "2025-03-25"
+}

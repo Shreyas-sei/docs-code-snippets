@@ -1,0 +1,16 @@
+{
+  "title": "API3 dAPI Consumer",
+  "description": "Demonstrates reading API3 dAPI (decentralised API) price feeds on Sei EVM via proxy contracts deployed through the API3 Market.",
+  "tags": ["oracle", "api3", "dapi", "sei", "price-feed", "first-party", "evm"],
+  "difficulty": "beginner",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/oracles/api3",
+    "https://docs.api3.org/reference/dapis/understand/"
+  ],
+  "dependencies": [
+    "@api3/contracts"
+  ],
+  "last_verified": "2025-03-25"
+}

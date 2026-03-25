@@ -1,0 +1,20 @@
+{
+  "name": "sei-layerzero-bridge",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:sei": "hardhat run scripts/deploy.js --network sei",
+    "deploy:seiTestnet": "hardhat run scripts/deploy.js --network seiTestnet",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia"
+  },
+  "dependencies": {
+    "@layerzerolabs/lz-evm-oapp-v2": "^2.0.0",
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.19.0"
+  }
+}

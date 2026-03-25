@@ -1,0 +1,13 @@
+{
+  "title": "Counter Contract with Foundry Fuzz Tests on Sei EVM",
+  "description": "A simple counter contract demonstrating the full Foundry workflow on Sei EVM — compile, unit test, fuzz test, and deploy. Ideal starting point for Foundry development on Sei.",
+  "tags": ["counter", "foundry", "fuzz-testing", "beginner", "sei"],
+  "difficulty": "beginner",
+  "tooling": ["foundry"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/evm-foundry"
+  ],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Thirdweb ERC-4337 Smart Wallet on Sei",
+  "description": "EIP-4337 Account Abstraction on Sei using thirdweb SDK v5. Shows in-app wallet setup, smart wallet creation, gasless transactions, and contract read/write.",
+  "tags": ["wallet", "thirdweb", "account-abstraction", "erc-4337", "gasless", "sei"],
+  "difficulty": "intermediate",
+  "tooling": ["react", "thirdweb", "vite", "typescript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/wallet-integrations/thirdweb",
+    "https://portal.thirdweb.com/typescript/v5/smartWallet"
+  ],
+  "dependencies": [
+    "thirdweb"
+  ],
+  "last_verified": "2025-03-25"
+}

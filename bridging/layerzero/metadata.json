@@ -1,0 +1,19 @@
+{
+  "title": "LayerZero OFT Bridge on Sei",
+  "description": "Deploy a LayerZero V2 Omnichain Fungible Token (OFT) on Sei and bridge tokens cross-chain. Covers contract deployment, peer linking, and sending tokens.",
+  "tags": ["bridging", "layerzero", "oft", "cross-chain", "sei", "hardhat"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "solidity", "ethers", "layerzero-v2"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/bridging/layerzero",
+    "https://docs.layerzero.network/v2/developers/evm/oft/quickstart"
+  ],
+  "dependencies": [
+    "@layerzerolabs/lz-evm-oapp-v2",
+    "@openzeppelin/contracts",
+    "@nomicfoundation/hardhat-toolbox",
+    "hardhat"
+  ],
+  "last_verified": "2025-03-25"
+}

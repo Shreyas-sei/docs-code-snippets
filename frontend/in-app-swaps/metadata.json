@@ -1,0 +1,20 @@
+{
+  "title": "In-App Swaps on Sei",
+  "description": "Build a token swap UI on Sei EVM — token selection, balance display, ERC-20 approval flow, and integration pattern for a DEX router.",
+  "tags": ["frontend", "swap", "defi", "sei", "wagmi", "erc20"],
+  "difficulty": "intermediate",
+  "tooling": ["react", "wagmi", "viem", "rainbowkit", "vite", "typescript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/in-app-swaps",
+    "https://docs.sei.io/evm/building-a-frontend"
+  ],
+  "dependencies": [
+    "wagmi",
+    "viem",
+    "@rainbow-me/rainbowkit",
+    "@sei-js/sei-global-wallet",
+    "@tanstack/react-query"
+  ],
+  "last_verified": "2025-03-25"
+}

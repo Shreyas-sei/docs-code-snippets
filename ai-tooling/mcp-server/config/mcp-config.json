@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/spec/main/schema/mcp-config.schema.json",
+  "mcpServers": {
+    "sei-evm": {
+      "command": "npx",
+      "args": ["-y", "@sei-js/mcp-server"],
+      "env": {
+        "SEI_RPC_URL": "https://evm-rpc.sei-apis.com",
+        "SEI_CHAIN_ID": "1329",
+        "SEI_NETWORK": "mainnet"
+      }
+    },
+    "sei-evm-testnet": {
+      "command": "npx",
+      "args": ["-y", "@sei-js/mcp-server"],
+      "env": {
+        "SEI_RPC_URL": "https://evm-rpc-testnet.sei-apis.com",
+        "SEI_CHAIN_ID": "713715",
+        "SEI_NETWORK": "testnet"
+      }
+    }
+  },
+  "_comment": {
+    "description": "MCP (Model Context Protocol) server configuration for AI assistants to interact with Sei blockchain",
+    "supported_clients": ["Claude Desktop", "Cursor", "Continue", "any MCP-compatible client"],
+    "installation": "Copy this config to your AI client's MCP configuration file",
+    "claude_desktop_config_path": {
+      "macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
+      "windows": "%APPDATA%\\Claude\\claude_desktop_config.json"
+    },
+    "capabilities": [
+      "Read blockchain state (balances, contracts, transactions)",
+      "Query ERC-20 token data",
+      "Look up Sei account information",
+      "Decode transaction data",
+      "Interact with Sei precompiles",
+      "Query Sei cosmos-layer data via EVM precompiles"
+    ]
+  }
+}

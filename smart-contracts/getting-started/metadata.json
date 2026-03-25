@@ -1,0 +1,11 @@
+{
+  "title": "Getting Started with Sei EVM",
+  "description": "Introductory smart contract examples — a basic Solidity Coin contract and a Vyper Open Auction contract — demonstrating core EVM patterns on Sei.",
+  "tags": ["solidity", "vyper", "beginner", "coin", "auction", "sei-evm"],
+  "difficulty": "beginner",
+  "tooling": ["solc", "vyper"],
+  "chain": "sei-mainnet",
+  "docs_urls": ["https://docs.sei.io/evm/evm-general"],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

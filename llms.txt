@@ -1,0 +1,259 @@
+# sei-code-examples
+
+Curated, runnable code examples extracted from the Sei EVM documentation.
+Source: https://docs.sei.io/evm
+Repo structure: function-based taxonomy organized by what the code does.
+
+## Network Info
+
+- Sei Mainnet: chain_id=1329, rpc=https://evm-rpc.sei-apis.com, explorer=https://seitrace.com
+- Sei Testnet: chain_id=713715, rpc=https://evm-rpc-testnet.sei-apis.com
+
+## Smart Contracts
+
+### smart-contracts/getting-started
+- Coin.sol — Basic Solidity coin contract with minting and transfer (from https://docs.sei.io/evm/evm-general)
+- Auction.vy — Vyper open auction contract with bidding, withdrawal, and auction end logic
+- Tags: solidity, vyper, beginner
+
+### smart-contracts/erc20-token
+- contracts/MyToken.sol — ERC20 token with mint, burn, pause, and ERC20Permit
+- scripts/deploy.js — Hardhat deploy script for Sei
+- test/MyToken.test.js — Hardhat tests
+- hardhat.config.js — Hardhat config with Sei mainnet/testnet networks
+- foundry/src/MyToken.sol — Foundry variant
+- foundry/script/Deploy.s.sol — Foundry deploy script
+- foundry/test/MyToken.t.sol — Foundry tests
+- foundry/foundry.toml — Foundry config for Sei
+- Tags: erc20, token, hardhat, foundry, openzeppelin, deploy
+- Docs: https://docs.sei.io/evm/evm-hardhat, https://docs.sei.io/evm/evm-foundry
+
+### smart-contracts/erc721-nft
+- contracts/MyNFT.sol — ERC721 NFT with enumerable, URI storage, pausable, burnable
+- scripts/deploy.js — Hardhat deploy script
+- hardhat.config.js — Hardhat config for Sei
+- foundry/src/MyNFT.sol — Foundry variant
+- foundry/script/Deploy.s.sol — Foundry deploy script
+- foundry/foundry.toml — Foundry config for Sei
+- Tags: erc721, nft, hardhat, foundry, openzeppelin
+- Docs: https://docs.sei.io/evm/evm-hardhat, https://docs.sei.io/evm/evm-foundry
+
+### smart-contracts/upgradeable-uups
+- contracts/MyTokenV1.sol — UUPS upgradeable ERC20 V1 (initializer)
+- contracts/MyTokenV2.sol — V2 with supply cap and transfer limits (reinitializer)
+- scripts/deploy.js — Deploy proxy script
+- scripts/upgrade.js — Upgrade proxy to V2 script
+- hardhat.config.js — Hardhat config for Sei
+- Tags: uups, upgradeable, proxy, erc20, advanced
+- Docs: https://docs.sei.io/evm/evm-hardhat
+
+### smart-contracts/counter
+- src/Counter.sol — Simple counter contract (increment/decrement/reset)
+- test/Counter.t.sol — Foundry unit and fuzz tests using bound()
+- script/Deploy.s.sol — Foundry deploy script
+- foundry.toml — Foundry config for Sei
+- Tags: counter, foundry, fuzz-testing, beginner
+- Docs: https://docs.sei.io/evm/evm-foundry
+
+### smart-contracts/verification
+- hardhat-verify.md — Hardhat verification commands for Seitrace (mainnet + testnet)
+- foundry-verify.md — Foundry forge verify-contract commands with constructor arg encoding
+- Tags: verification, seitrace, hardhat, foundry
+- Docs: https://docs.sei.io/evm/evm-verify-contracts
+
+## Precompiles
+
+### precompiles/example-usage
+- setup-ethers.js — Browser and Node.js ethers.js provider/signer setup with @sei-js/evm
+- staking-example.js — JS: delegate, undelegate, redelegate, query delegation
+- governance-example.js — JS: vote on proposals, submit proposals
+- Tags: precompile, staking, governance, ethers, javascript
+- Docs: https://docs.sei.io/evm/precompiles/example-usage
+
+### precompiles/distribution
+- interfaces/IDistribution.sol — Distribution precompile interface (address: 0x0000000000000000000000000000000000001007)
+- YieldAggregator.sol — Harvest rewards from multiple validators
+- ValidatorCommissionManager.sol — Treasury routing, commission withdrawal
+- Tags: precompile, distribution, rewards, staking
+- Docs: https://docs.sei.io/evm/precompiles/distribution
+
+### precompiles/staking
+- interfaces/IStaking.sol — Staking precompile interface (address: 0x0000000000000000000000000000000000001005)
+- StakingManager.sol — Full delegation lifecycle: delegate (18-dec wei), undelegate/redelegate (6-dec usei)
+- Tags: precompile, staking, delegation, validator
+- Docs: https://docs.sei.io/evm/precompiles/staking
+
+### precompiles/governance
+- interfaces/IGovernance.sol — Governance precompile interface (address: 0x0000000000000000000000000000000000001006)
+- GovernanceVoter.sol — yes/no/abstain/noWithVeto voting helpers, proposal submission
+- Tags: precompile, governance, voting, proposals
+- Docs: https://docs.sei.io/evm/precompiles/governance
+
+### precompiles/oracle
+- interfaces/IOracle.sol — Oracle precompile interface (address: 0x0000000000000000000000000000000000001008)
+- OraclePriceFeed.sol — Live price queries, TWAP, caching with staleness protection
+- Tags: precompile, oracle, price-feed, twap, defi
+- Docs: https://docs.sei.io/evm/precompiles/oracle
+
+### precompiles/json
+- interfaces/IJson.sol — JSON precompile interface (address: 0x0000000000000000000000000000000000001003)
+- JsonParser.sol — String/uint/array extraction, multi-key batch extraction, price data decoder
+- Tags: precompile, json, parsing, cosmwasm
+- Docs: https://docs.sei.io/evm/precompiles/json
+
+### precompiles/p256
+- P256Verify.sol — Low-level IP256Verify interface + constant (address: 0x0000000000000000000000000000000000000100)
+- ECDSA.sol — Shared Signature and PublicKey structs
+- P256.sol — P256.verify() library (EIP-7212 wrapper)
+- P256Example.sol — Key registry, replay-safe authenticated actions, WebAuthn/Passkey helper
+- Tags: precompile, p256, eip-7212, webauthn, passkey, cryptography, advanced
+- Docs: https://docs.sei.io/evm/precompiles/p256-precompile
+
+### precompiles/cosmos
+- AddrPrecompile.sol — EVM ↔ bech32 address conversion
+- BankPrecompile.sol — Native Cosmos token send, balance and supply queries
+- CosmWasmPrecompile.sol — Execute, query, and instantiate CosmWasm contracts from EVM
+- IBCPrecompile.sol — IBC transfers with height/timestamp-based timeouts
+- PointerPrecompile.sol — Create and resolve ERC-20/ERC-721 ↔ CW-20/CW-721 pointers
+- Tags: precompile, cosmos, bank, ibc, cosmwasm, addr, pointer, advanced
+- Docs: https://docs.sei.io/evm/precompiles/addr, .../bank, .../cosmwasm, .../ibc, .../pointer
+
+## Frontend
+
+### frontend/connect-wallet
+- src/App.tsx — Full RainbowKit + wagmi + Sei Global Wallet React app (from docs verbatim)
+- src/wagmi.ts — wagmi config with sei and seiTestnet chains
+- Tags: frontend, wagmi, rainbowkit, eip-6963, sei-global-wallet, beginner
+- Docs: https://docs.sei.io/evm/sei-global-wallet, https://docs.sei.io/evm/building-a-frontend
+
+### frontend/read-write-contract
+- src/ContractInteraction.tsx — useReadContract, useWriteContract, useWaitForTransactionReceipt
+- src/App.tsx — wagmi provider setup
+- Tags: frontend, wagmi, smart-contract, read, write
+- Docs: https://docs.sei.io/evm/building-a-frontend
+
+### frontend/in-app-swaps
+- src/SwapComponent.tsx — Token selector, balance display, ERC-20 approve flow, DEX integration
+- Tags: frontend, swap, defi, wagmi, erc20, intermediate
+- Docs: https://docs.sei.io/evm/in-app-swaps
+
+## Wallet Integrations
+
+### wallet-integrations/particle
+- src/App.tsx — Particle Auth social login + ERC-4337 Smart Account on Sei
+- src/particleConfig.ts — Particle network config (Biconomy v2 AA)
+- Tags: wallet, particle, account-abstraction, erc-4337, social-login
+- Docs: https://docs.sei.io/evm/wallet-integrations/particle
+
+### wallet-integrations/pimlico
+- src/pimlicoClient.ts — createPimlicoClient, toSimpleSmartAccount, createSmartAccountClient
+- src/App.tsx — Pimlico bundler + paymaster, gas sponsorship, UserOperation sending
+- Tags: wallet, pimlico, account-abstraction, erc-4337, gas-sponsorship
+- Docs: https://docs.sei.io/evm/wallet-integrations/pimlico
+
+### wallet-integrations/thirdweb-4337
+- src/client.ts — Thirdweb client init (from docs verbatim)
+- src/App.tsx — smartWallet + inAppWallet, TransactionButton, readContract/prepareContractCall
+- contracts/Storage.sol — Storage contract used in the example
+- Tags: wallet, thirdweb, account-abstraction, erc-4337, gasless
+- Docs: https://docs.sei.io/evm/wallet-integrations/thirdweb
+
+### wallet-integrations/thirdweb-7702
+- src/App.tsx — inAppWallet with executionMode EIP7702, sponsorGas: true
+- Tags: wallet, thirdweb, eip-7702, gasless (EOA keeps its address unlike ERC-4337)
+- Docs: https://docs.sei.io/evm/wallet-integrations/thirdweb-7702
+
+## Bridging
+
+### bridging/layerzero
+- contracts/MyOFT.sol — LayerZero V2 OFT inheriting from OFT base; Sei mainnet EID: 30280
+- hardhat.config.js — Sei mainnet/testnet/Sepolia networks for LZ deployment
+- scripts/deploy.js — Deploy OFT, link peers, send cross-chain tokens
+- Tags: bridging, layerzero, oft, cross-chain
+- Docs: https://docs.sei.io/evm/bridging/layerzero
+
+### bridging/thirdweb
+- src/BridgeComponent.tsx — PayEmbed in bridge + buy modes targeting Sei mainnet (chain ID 1329)
+- Tags: bridging, thirdweb, cross-chain (350+ chains, 20k+ tokens)
+- Docs: https://docs.sei.io/evm/bridging/thirdweb
+
+## Oracles
+
+### oracles/chainlink
+- contracts/ChainlinkConsumer.sol — AggregatorV3Interface, staleness checks, 18-dec scaling
+- Tags: oracle, chainlink, price-feed, beginner
+- Docs: https://docs.sei.io/evm/oracles/chainlink
+
+### oracles/pyth
+- contracts/PythPriceFeed.sol — Pull-based, VAA updates, getPriceNoOlderThan, atomic updateAndGetPrice
+- scripts/updateAndRead.js — Fetch VAAs from Hermes API and push on-chain
+- Tags: oracle, pyth, price-feed, pull-oracle, hermes, intermediate
+- Docs: https://docs.sei.io/evm/oracles/pyth
+
+### oracles/redstone
+- contracts/RedstoneConsumer.sol — Inherits MainDemoConsumerBase; calldata-injection model
+- Tags: oracle, redstone, price-feed, calldata, intermediate
+- Docs: https://docs.sei.io/evm/oracles/redstone
+
+### oracles/api3
+- contracts/Api3Consumer.sol — Minimal IApi3DapiProxy interface, multi-feed, staleness check
+- Tags: oracle, api3, dapi, price-feed, beginner
+- Docs: https://docs.sei.io/evm/oracles/api3
+
+## VRF
+
+### vrf/pyth
+- contracts/SeiEntropyDemo.sol — Complete dice game implementing IEntropyConsumer (from docs verbatim)
+  - playDiceGame(targetNumber) — pay fee, request randomness
+  - entropyCallback(seqNum, provider, randomNumber) — resolve result and pay winner
+- scripts/deploy.js — Deploy with automatic house bankroll funding
+- Tags: vrf, randomness, pyth, entropy, dice-game, callback, intermediate
+- Docs: https://docs.sei.io/evm/vrf/pyth-network-vrf
+
+## Indexers
+
+### indexers/goldsky
+- subgraph/subgraph.yaml — Goldsky subgraph manifest for Sei mainnet
+- subgraph/schema.graphql — Token, Transfer, Approval, AccountBalance entities
+- subgraph/src/mapping.ts — AssemblyScript event handlers with balance tracking
+- Tags: indexer, goldsky, subgraph, erc20, graphql
+- Docs: https://docs.sei.io/evm/indexers/goldsky
+
+### indexers/the-graph
+- subgraph/subgraph.yaml — The Graph manifest (Protocol singleton, call handler, grafting)
+- subgraph/schema.graphql — Schema with protocol-level stats
+- subgraph/src/mapping.ts — AssemblyScript mappings with nonFatalErrors
+- Tags: indexer, the-graph, subgraph, erc20, graphql
+- Docs: https://docs.sei.io/evm/indexers/the-graph
+
+### indexers/moralis
+- streams/createStream.js — Moralis Streams setup on Sei chain 0x531 (ERC-20 + native TX)
+- webhooks/handler.js — Express server with HMAC signature verification
+- Tags: indexer, moralis, streams, webhooks, real-time, beginner
+- Docs: https://docs.sei.io/evm/indexers/moralis
+
+## AI Tooling
+
+### ai-tooling/mcp-server
+- config/mcp-config.json — MCP server config for Claude Desktop / Cursor / Continue
+- Tags: ai-tooling, mcp, model-context-protocol, claude, cursor, beginner
+- Docs: https://docs.sei.io/evm/ai-tooling/mcp-server
+
+### ai-tooling/cambrian
+- src/agent.ts — LangChain ReAct agent with Cambrian toolkit; interactive + demo modes
+- Tags: ai-tooling, cambrian, langchain, openai, llm, intermediate
+- Docs: https://docs.sei.io/evm/ai-tooling/cambrian
+
+## Protocols
+
+### protocols/usdc
+- contracts/USDCIntegration.sol — approve/transferFrom, EIP-2612 permit, blacklist checks
+- config/addresses.json — USDC mainnet: 0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1
+- Tags: usdc, stablecoin, circle, erc20, permit, eip2612, beginner
+- Docs: https://docs.sei.io/evm/usdc
+
+### protocols/x402
+- server/payment-server.ts — Express server with 4 price tiers ($0.01–$1.00) via paymentMiddleware
+- client/payment-client.ts — x402-fetch wrapper, manual 402 flow, batch client (3 approaches)
+- Tags: x402, payments, http, usdc, micropayments, ai-agents, intermediate
+- Docs: https://docs.sei.io/evm/x402

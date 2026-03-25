@@ -1,0 +1,16 @@
+{
+  "title": "RedStone Oracle Consumer",
+  "description": "Demonstrates RedStone's Classic pull-based oracle integration on Sei EVM, where signed price data is injected into calldata via the WrapperBuilder SDK.",
+  "tags": ["oracle", "redstone", "sei", "price-feed", "calldata", "evm"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "ethers", "redstone-evm-connector"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/oracles/redstone",
+    "https://docs.redstone.finance/docs/smart-contract-devs/get-started/redstone-classic"
+  ],
+  "dependencies": [
+    "@redstone-finance/evm-connector"
+  ],
+  "last_verified": "2025-03-25"
+}

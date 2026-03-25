@@ -1,0 +1,15 @@
+{
+  "title": "Smart Contract Verification on Sei (Hardhat & Foundry)",
+  "description": "Reference guides for verifying smart contracts on Sei EVM using Hardhat's hardhat-verify plugin and Foundry's forge verify-contract command. Covers Seitrace configuration, constructor arguments, and common troubleshooting.",
+  "tags": ["verification", "seitrace", "hardhat", "foundry", "sei"],
+  "difficulty": "beginner",
+  "tooling": ["hardhat", "foundry"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/evm-verify-contracts",
+    "https://docs.sei.io/evm/evm-hardhat",
+    "https://docs.sei.io/evm/evm-foundry"
+  ],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

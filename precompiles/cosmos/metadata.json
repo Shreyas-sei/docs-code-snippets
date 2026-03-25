@@ -1,0 +1,18 @@
+{
+  "title": "Cosmos Precompiles",
+  "description": "Bridge EVM and Cosmos with Sei's addr, bank, CosmWasm, IBC, and pointer precompiles",
+  "tags": ["precompile", "cosmos", "bank", "ibc", "cosmwasm", "addr", "pointer", "sei", "solidity"],
+  "difficulty": "advanced",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/precompiles/addr",
+    "https://docs.sei.io/evm/precompiles/bank",
+    "https://docs.sei.io/evm/precompiles/cosmwasm",
+    "https://docs.sei.io/evm/precompiles/ibc",
+    "https://docs.sei.io/evm/precompiles/pointer",
+    "https://docs.sei.io/evm/precompiles/pointerview"
+  ],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

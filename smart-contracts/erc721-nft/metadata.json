@@ -1,0 +1,18 @@
+{
+  "title": "ERC721 NFT Collection on Sei EVM",
+  "description": "A full-featured ERC721 NFT collection with enumerable, URI storage, pausable, and burnable extensions. Includes Hardhat and Foundry deployments for the Sei EVM network.",
+  "tags": ["erc721", "nft", "hardhat", "foundry", "openzeppelin", "sei", "deploy"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "foundry", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/evm-hardhat",
+    "https://docs.sei.io/evm/evm-foundry"
+  ],
+  "dependencies": [
+    "@openzeppelin/contracts",
+    "@nomicfoundation/hardhat-toolbox",
+    "dotenv"
+  ],
+  "last_verified": "2025-03-25"
+}

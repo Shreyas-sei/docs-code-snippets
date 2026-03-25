@@ -1,0 +1,11 @@
+{
+  "title": "Governance Precompile",
+  "description": "Cast votes and submit governance proposals on Sei using the governance precompile",
+  "tags": ["precompile", "governance", "voting", "proposals", "sei", "solidity"],
+  "difficulty": "beginner",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": ["https://docs.sei.io/evm/precompiles/governance"],
+  "dependencies": ["@sei-js/evm"],
+  "last_verified": "2025-03-25"
+}

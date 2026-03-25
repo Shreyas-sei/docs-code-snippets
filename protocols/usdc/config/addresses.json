@@ -1,0 +1,42 @@
+{
+  "usdc": {
+    "mainnet": {
+      "chainId": 1329,
+      "network": "sei-mainnet",
+      "rpc": "https://evm-rpc.sei-apis.com",
+      "explorer": "https://seitrace.com",
+      "contracts": {
+        "USDC": "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1",
+        "USDC_implementation": "0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1"
+      },
+      "token": {
+        "name": "USD Coin",
+        "symbol": "USDC",
+        "decimals": 6,
+        "issuer": "Circle"
+      }
+    },
+    "testnet": {
+      "chainId": 713715,
+      "network": "sei-testnet",
+      "rpc": "https://evm-rpc-testnet.sei-apis.com",
+      "explorer": "https://seitrace.com/?chain=atlantic-2",
+      "contracts": {
+        "USDC": "0x0000000000000000000000000000000000000000"
+      },
+      "_note": "Check https://docs.sei.io/evm/usdc for current testnet USDC address"
+    }
+  },
+  "relatedTokens": {
+    "mainnet": {
+      "USDT": "0x0000000000000000000000000000000000000000",
+      "WSEI": "0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7",
+      "WETH": "0x160345fC359604fC6e70E3c5fAcbdE5F7A9342d8"
+    }
+  },
+  "_metadata": {
+    "lastUpdated": "2025-03-25",
+    "source": "https://docs.sei.io/evm/usdc",
+    "note": "Always verify addresses on-chain before use. Use isContract() to confirm."
+  }
+}

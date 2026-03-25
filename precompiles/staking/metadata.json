@@ -1,0 +1,11 @@
+{
+  "title": "Staking Precompile",
+  "description": "Delegate, undelegate, redelegate SEI tokens and query validator/delegation state using the Sei staking precompile",
+  "tags": ["precompile", "staking", "delegation", "validator", "sei", "solidity"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": ["https://docs.sei.io/evm/precompiles/staking"],
+  "dependencies": ["@sei-js/evm"],
+  "last_verified": "2025-03-25"
+}

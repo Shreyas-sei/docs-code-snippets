@@ -1,0 +1,19 @@
+{
+  "title": "Read & Write Contract — wagmi on Sei",
+  "description": "Read from and write to a Solidity smart contract on Sei EVM using wagmi v2 hooks (useReadContract, useWriteContract, useWaitForTransactionReceipt).",
+  "tags": ["frontend", "wagmi", "sei", "smart-contract", "read", "write"],
+  "difficulty": "beginner",
+  "tooling": ["react", "wagmi", "viem", "rainbowkit", "vite", "typescript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/building-a-frontend"
+  ],
+  "dependencies": [
+    "wagmi",
+    "viem",
+    "@rainbow-me/rainbowkit",
+    "@sei-js/sei-global-wallet",
+    "@tanstack/react-query"
+  ],
+  "last_verified": "2025-03-25"
+}

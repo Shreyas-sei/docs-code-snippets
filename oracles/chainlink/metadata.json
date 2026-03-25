@@ -1,0 +1,16 @@
+{
+  "title": "Chainlink Data Feeds Consumer",
+  "description": "Demonstrates consuming Chainlink price feed data on Sei EVM using AggregatorV3Interface, with staleness checks and decimal scaling.",
+  "tags": ["oracle", "chainlink", "sei", "price-feed", "data-feed", "evm"],
+  "difficulty": "beginner",
+  "tooling": ["hardhat", "ethers", "chainlink"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/oracles/chainlink",
+    "https://docs.chain.link/data-feeds/price-feeds/addresses?network=sei"
+  ],
+  "dependencies": [
+    "@chainlink/contracts"
+  ],
+  "last_verified": "2025-03-25"
+}

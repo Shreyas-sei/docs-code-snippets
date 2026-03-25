@@ -1,0 +1,17 @@
+{
+  "title": "Goldsky Subgraph Indexer",
+  "description": "Goldsky subgraph for indexing ERC-20 Transfer and Approval events on Sei EVM, with balance tracking and aggregate stats.",
+  "tags": ["indexer", "goldsky", "subgraph", "sei", "erc20", "graphql", "the-graph", "evm"],
+  "difficulty": "intermediate",
+  "tooling": ["goldsky-cli", "graph-cli", "assemblyscript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/indexers/goldsky",
+    "https://docs.goldsky.com/subgraphs/deploying-subgraphs"
+  ],
+  "dependencies": [
+    "@graphprotocol/graph-cli",
+    "@graphprotocol/graph-ts"
+  ],
+  "last_verified": "2025-03-25"
+}

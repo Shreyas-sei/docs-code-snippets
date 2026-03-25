@@ -1,0 +1,20 @@
+{
+  "title": "Cambrian Agent Kit — AI Agents on Sei",
+  "description": "AI agent setup using Cambrian Agent Kit and LangChain ReAct pattern to interact with the Sei blockchain via natural language.",
+  "tags": ["ai-tooling", "cambrian", "agent-kit", "langchain", "openai", "sei", "evm", "llm"],
+  "difficulty": "intermediate",
+  "tooling": ["cambrian-agent-kit", "langchain", "openai", "ethers", "typescript"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/ai-tooling/cambrian",
+    "https://docs.cambrian.ai"
+  ],
+  "dependencies": [
+    "@cambrian-ai/agent-kit",
+    "@langchain/core",
+    "@langchain/langgraph",
+    "@langchain/openai",
+    "ethers"
+  ],
+  "last_verified": "2025-03-25"
+}

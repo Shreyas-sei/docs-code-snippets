@@ -1,0 +1,11 @@
+{
+  "title": "P256 Precompile (EIP-7212)",
+  "description": "Verify P-256 (secp256r1) signatures on Sei using the EIP-7212 precompile, enabling WebAuthn/Passkey authentication",
+  "tags": ["precompile", "p256", "eip-7212", "webauthn", "passkey", "cryptography", "sei", "solidity"],
+  "difficulty": "advanced",
+  "tooling": ["hardhat"],
+  "chain": "sei-mainnet",
+  "docs_urls": ["https://docs.sei.io/evm/precompiles/p256-precompile"],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

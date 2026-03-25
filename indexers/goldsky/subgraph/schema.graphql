@@ -1,0 +1,74 @@
+# ─────────────────────────────────────────────
+# ERC-20 Transfer Indexer Schema
+# ─────────────────────────────────────────────
+
+type Token @entity {
+  "Contract address of the ERC-20 token"
+  id: ID!
+  name: String!
+  symbol: String!
+  decimals: Int!
+  totalSupply: BigInt!
+  transferCount: BigInt!
+  holderCount: BigInt!
+}
+
+type Account @entity {
+  "Ethereum address"
+  id: ID!
+  balances: [AccountBalance!]! @derivedFrom(field: "account")
+  transfersFrom: [Transfer!]! @derivedFrom(field: "from")
+  transfersTo: [Transfer!]! @derivedFrom(field: "to")
+  approvalsOwner: [Approval!]! @derivedFrom(field: "owner")
+  approvalsSpender: [Approval!]! @derivedFrom(field: "spender")
+}
+
+type AccountBalance @entity {
+  "Composite ID: tokenAddress-accountAddress"
+  id: ID!
+  token: Token!
+  account: Account!
+  amount: BigInt!
+  blockNumber: BigInt!
+  timestamp: BigInt!
+}
+
+type Transfer @entity(immutable: true) {
+  "Transaction hash + log index"
+  id: ID!
+  token: Token!
+  from: Account!
+  to: Account!
+  amount: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+  logIndex: BigInt!
+}
+
+type Approval @entity(immutable: true) {
+  "Transaction hash + log index"
+  id: ID!
+  token: Token!
+  owner: Account!
+  spender: Account!
+  amount: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+# ─────────────────────────────────────────────
+# Aggregate statistics
+# ─────────────────────────────────────────────
+
+type DailyTransferStat @entity {
+  "YYYY-MM-DD"
+  id: ID!
+  token: Token!
+  date: String!
+  transferCount: BigInt!
+  uniqueSenders: BigInt!
+  uniqueRecipients: BigInt!
+  totalVolume: BigInt!
+}

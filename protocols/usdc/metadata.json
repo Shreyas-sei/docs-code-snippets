@@ -1,0 +1,14 @@
+{
+  "title": "USDC Integration on Sei",
+  "description": "Common USDC integration patterns on Sei EVM: approve/transferFrom, EIP-2612 permit, deposits, withdrawals, and direct payments with blacklist checks.",
+  "tags": ["usdc", "stablecoin", "circle", "erc20", "sei", "permit", "eip2612", "evm"],
+  "difficulty": "beginner",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/usdc",
+    "https://developers.circle.com/stablecoins/docs/usdc-on-main-blockchains"
+  ],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

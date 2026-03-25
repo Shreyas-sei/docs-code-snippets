@@ -1,0 +1,19 @@
+{
+  "title": "ERC20 Token on Sei EVM",
+  "description": "A full-featured ERC20 token with mint, burn, pause, and ERC20Permit support. Includes Hardhat and Foundry deployments with tests for the Sei EVM network.",
+  "tags": ["erc20", "token", "hardhat", "foundry", "openzeppelin", "sei", "deploy"],
+  "difficulty": "beginner",
+  "tooling": ["hardhat", "foundry", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/evm-hardhat",
+    "https://docs.sei.io/evm/evm-foundry",
+    "https://docs.sei.io/evm/evm-wizard"
+  ],
+  "dependencies": [
+    "@openzeppelin/contracts",
+    "@nomicfoundation/hardhat-toolbox",
+    "dotenv"
+  ],
+  "last_verified": "2025-03-25"
+}

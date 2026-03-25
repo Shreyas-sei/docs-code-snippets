@@ -1,0 +1,70 @@
+# ─────────────────────────────────────────────
+# ERC-20 Token Subgraph Schema — The Graph
+# ─────────────────────────────────────────────
+
+type Token @entity {
+  "Contract address"
+  id: ID!
+  name: String!
+  symbol: String!
+  decimals: Int!
+  totalSupply: BigInt!
+  transferCount: BigInt!
+  holderCount: BigInt!
+  createdAtBlock: BigInt!
+  createdAtTimestamp: BigInt!
+}
+
+type Account @entity {
+  id: ID!
+  balances: [AccountBalance!]! @derivedFrom(field: "account")
+  sentTransfers: [Transfer!]! @derivedFrom(field: "from")
+  receivedTransfers: [Transfer!]! @derivedFrom(field: "to")
+  approvals: [Approval!]! @derivedFrom(field: "owner")
+}
+
+type AccountBalance @entity {
+  "tokenAddress-accountAddress"
+  id: ID!
+  token: Token!
+  account: Account!
+  amount: BigInt!
+  blockNumber: BigInt!
+  lastUpdated: BigInt!
+}
+
+type Transfer @entity(immutable: true) {
+  "txHash-logIndex"
+  id: ID!
+  token: Token!
+  from: Account!
+  to: Account!
+  amount: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+  logIndex: BigInt!
+  gasUsed: BigInt
+  gasPrice: BigInt
+}
+
+type Approval @entity(immutable: true) {
+  "txHash-logIndex"
+  id: ID!
+  token: Token!
+  owner: Account!
+  spender: Account!
+  amount: BigInt!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Protocol @entity {
+  "Singleton: 'protocol'"
+  id: ID!
+  totalTransfers: BigInt!
+  totalTokens: BigInt!
+  totalAccounts: BigInt!
+  lastUpdatedBlock: BigInt!
+}

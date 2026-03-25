@@ -1,0 +1,17 @@
+{
+  "title": "Pyth Network Price Feeds",
+  "description": "Demonstrates consuming Pyth Network pull-based price feeds on Sei EVM, including fetching VAAs from the Hermes API and on-chain price updates.",
+  "tags": ["oracle", "pyth", "sei", "price-feed", "pull-oracle", "hermes", "evm"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "ethers", "axios"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/oracles/pyth",
+    "https://docs.pyth.network/price-feeds/use-real-time-data/evm"
+  ],
+  "dependencies": [
+    "@pythnetwork/pyth-sdk-solidity",
+    "axios"
+  ],
+  "last_verified": "2025-03-25"
+}

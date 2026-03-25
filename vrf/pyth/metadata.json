@@ -1,0 +1,16 @@
+{
+  "title": "Pyth Entropy VRF — Dice Game",
+  "description": "Complete on-chain dice game using Pyth Entropy for verifiable randomness on Sei EVM. Demonstrates the request-callback VRF pattern with IEntropyConsumer.",
+  "tags": ["vrf", "randomness", "pyth", "entropy", "sei", "dice-game", "evm", "callback"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "ethers", "pyth-entropy-sdk"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/vrf/pyth-network-vrf",
+    "https://docs.pyth.network/entropy"
+  ],
+  "dependencies": [
+    "@pythnetwork/entropy-sdk-solidity"
+  ],
+  "last_verified": "2025-03-25"
+}

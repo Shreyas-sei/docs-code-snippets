@@ -1,0 +1,18 @@
+{
+  "title": "Moralis Streams Indexer",
+  "description": "Real-time blockchain event indexing for Sei EVM using Moralis Streams, with stream setup and an Express webhook handler for processing ERC-20 events.",
+  "tags": ["indexer", "moralis", "streams", "webhooks", "sei", "erc20", "real-time", "evm"],
+  "difficulty": "beginner",
+  "tooling": ["moralis", "express", "node"],
+  "chain": "sei-mainnet",
+  "docs_urls": [
+    "https://docs.sei.io/evm/indexers/moralis",
+    "https://docs.moralis.io/streams-api/evm"
+  ],
+  "dependencies": [
+    "moralis",
+    "@moralisweb3/common-evm-utils",
+    "express"
+  ],
+  "last_verified": "2025-03-25"
+}

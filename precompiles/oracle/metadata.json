@@ -1,0 +1,11 @@
+{
+  "title": "Oracle Precompile",
+  "description": "Read on-chain asset prices and TWAP data from the Sei oracle precompile",
+  "tags": ["precompile", "oracle", "price-feed", "twap", "defi", "sei", "solidity"],
+  "difficulty": "intermediate",
+  "tooling": ["hardhat", "ethers"],
+  "chain": "sei-mainnet",
+  "docs_urls": ["https://docs.sei.io/evm/precompiles/oracle"],
+  "dependencies": [],
+  "last_verified": "2025-03-25"
+}

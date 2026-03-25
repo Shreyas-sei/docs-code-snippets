@@ -1,0 +1,28 @@
+{
+  "name": "cambrian-sei-agent",
+  "version": "1.0.0",
+  "description": "Cambrian Agent Kit example for Sei EVM — AI agents that interact with the Sei blockchain",
+  "main": "dist/agent.js",
+  "scripts": {
+    "start": "ts-node src/agent.ts",
+    "demo": "ts-node src/agent.ts --demo",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn src/agent.ts"
+  },
+  "dependencies": {
+    "@cambrian-ai/agent-kit": "^0.1.0",
+    "@langchain/core": "^0.3.0",
+    "@langchain/langgraph": "^0.2.0",
+    "@langchain/openai": "^0.3.0",
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
